@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		306564C41A990EBD003DAA17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C31A990EBD003DAA17 /* main.m */; };
+		306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C61A990EBD003DAA17 /* AppDelegate.m */; };
+		306564CA1A990EBD003DAA17 /* MiniGolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */; };
+		306564CD1A990EBD003DAA17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564CC1A990EBD003DAA17 /* ViewController.m */; };
+		306564D01A990EBD003DAA17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306564CE1A990EBD003DAA17 /* Main.storyboard */; };
+		306564D21A990EBD003DAA17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306564D11A990EBD003DAA17 /* Images.xcassets */; };
+		306564D51A990EBD003DAA17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306564D31A990EBD003DAA17 /* LaunchScreen.xib */; };
+		306564E11A990EBD003DAA17 /* MiniGolfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564E01A990EBD003DAA17 /* MiniGolfTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		306564DB1A990EBD003DAA17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 306564B61A990EBD003DAA17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 306564BD1A990EBD003DAA17;
+			remoteInfo = MiniGolf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		306564BE1A990EBD003DAA17 /* MiniGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		306564C21A990EBD003DAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306564C31A990EBD003DAA17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		306564C51A990EBD003DAA17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		306564C61A990EBD003DAA17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniGolf.xcdatamodel; sourceTree = "<group>"; };
+		306564CB1A990EBD003DAA17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		306564CC1A990EBD003DAA17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		306564CF1A990EBD003DAA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		306564D11A990EBD003DAA17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		306564D41A990EBD003DAA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		306564DA1A990EBD003DAA17 /* MiniGolfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniGolfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		306564DF1A990EBD003DAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306564E01A990EBD003DAA17 /* MiniGolfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniGolfTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		306564BB1A990EBD003DAA17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306564D71A990EBD003DAA17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		306564B51A990EBD003DAA17 = {
+			isa = PBXGroup;
+			children = (
+				306564C01A990EBD003DAA17 /* MiniGolf */,
+				306564DD1A990EBD003DAA17 /* MiniGolfTests */,
+				306564BF1A990EBD003DAA17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		306564BF1A990EBD003DAA17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				306564BE1A990EBD003DAA17 /* MiniGolf.app */,
+				306564DA1A990EBD003DAA17 /* MiniGolfTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		306564C01A990EBD003DAA17 /* MiniGolf */ = {
+			isa = PBXGroup;
+			children = (
+				306564C51A990EBD003DAA17 /* AppDelegate.h */,
+				306564C61A990EBD003DAA17 /* AppDelegate.m */,
+				306564CB1A990EBD003DAA17 /* ViewController.h */,
+				306564CC1A990EBD003DAA17 /* ViewController.m */,
+				306564CE1A990EBD003DAA17 /* Main.storyboard */,
+				306564D11A990EBD003DAA17 /* Images.xcassets */,
+				306564D31A990EBD003DAA17 /* LaunchScreen.xib */,
+				306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */,
+				306564C11A990EBD003DAA17 /* Supporting Files */,
+			);
+			path = MiniGolf;
+			sourceTree = "<group>";
+		};
+		306564C11A990EBD003DAA17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				306564C21A990EBD003DAA17 /* Info.plist */,
+				306564C31A990EBD003DAA17 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		306564DD1A990EBD003DAA17 /* MiniGolfTests */ = {
+			isa = PBXGroup;
+			children = (
+				306564E01A990EBD003DAA17 /* MiniGolfTests.m */,
+				306564DE1A990EBD003DAA17 /* Supporting Files */,
+			);
+			path = MiniGolfTests;
+			sourceTree = "<group>";
+		};
+		306564DE1A990EBD003DAA17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				306564DF1A990EBD003DAA17 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		306564BD1A990EBD003DAA17 /* MiniGolf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306564E41A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolf" */;
+			buildPhases = (
+				306564BA1A990EBD003DAA17 /* Sources */,
+				306564BB1A990EBD003DAA17 /* Frameworks */,
+				306564BC1A990EBD003DAA17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniGolf;
+			productName = MiniGolf;
+			productReference = 306564BE1A990EBD003DAA17 /* MiniGolf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		306564D91A990EBD003DAA17 /* MiniGolfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306564E71A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolfTests" */;
+			buildPhases = (
+				306564D61A990EBD003DAA17 /* Sources */,
+				306564D71A990EBD003DAA17 /* Frameworks */,
+				306564D81A990EBD003DAA17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				306564DC1A990EBD003DAA17 /* PBXTargetDependency */,
+			);
+			name = MiniGolfTests;
+			productName = MiniGolfTests;
+			productReference = 306564DA1A990EBD003DAA17 /* MiniGolfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		306564B61A990EBD003DAA17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Daniel Bladh";
+				TargetAttributes = {
+					306564BD1A990EBD003DAA17 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					306564D91A990EBD003DAA17 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 306564BD1A990EBD003DAA17;
+					};
+				};
+			};
+			buildConfigurationList = 306564B91A990EBD003DAA17 /* Build configuration list for PBXProject "MiniGolf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 306564B51A990EBD003DAA17;
+			productRefGroup = 306564BF1A990EBD003DAA17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				306564BD1A990EBD003DAA17 /* MiniGolf */,
+				306564D91A990EBD003DAA17 /* MiniGolfTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		306564BC1A990EBD003DAA17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306564D01A990EBD003DAA17 /* Main.storyboard in Resources */,
+				306564D51A990EBD003DAA17 /* LaunchScreen.xib in Resources */,
+				306564D21A990EBD003DAA17 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306564D81A990EBD003DAA17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		306564BA1A990EBD003DAA17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306564CA1A990EBD003DAA17 /* MiniGolf.xcdatamodeld in Sources */,
+				306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */,
+				306564CD1A990EBD003DAA17 /* ViewController.m in Sources */,
+				306564C41A990EBD003DAA17 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306564D61A990EBD003DAA17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306564E11A990EBD003DAA17 /* MiniGolfTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		306564DC1A990EBD003DAA17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 306564BD1A990EBD003DAA17 /* MiniGolf */;
+			targetProxy = 306564DB1A990EBD003DAA17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		306564CE1A990EBD003DAA17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				306564CF1A990EBD003DAA17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		306564D31A990EBD003DAA17 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				306564D41A990EBD003DAA17 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		306564E21A990EBD003DAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		306564E31A990EBD003DAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		306564E51A990EBD003DAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiniGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		306564E61A990EBD003DAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MiniGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		306564E81A990EBD003DAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiniGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf";
+			};
+			name = Debug;
+		};
+		306564E91A990EBD003DAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiniGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		306564B91A990EBD003DAA17 /* Build configuration list for PBXProject "MiniGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306564E21A990EBD003DAA17 /* Debug */,
+				306564E31A990EBD003DAA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306564E41A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306564E51A990EBD003DAA17 /* Debug */,
+				306564E61A990EBD003DAA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		306564E71A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306564E81A990EBD003DAA17 /* Debug */,
+				306564E91A990EBD003DAA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */,
+			);
+			currentVersion = 306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */;
+			path = MiniGolf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 306564B61A990EBD003DAA17 /* Project object */;
+}
