@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddCourseViewController.h
 //  MiniGolf
 //
 //  Created by Daniel Bladh on 2/21/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AddCourseViewController : UIViewController
 
 @end
-
