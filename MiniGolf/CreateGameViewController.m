@@ -7,10 +7,13 @@
 //
 
 #import "CreateGameViewController.h"
+#import "CreateGameTableViewDataSource.h"
+#import "AddCourseViewController.h"
 
-@interface CreateGameViewController () <UITableViewDelegate>
+@interface CreateGameViewController () <UITableViewDelegate, UIPopoverControllerDelegate>
 
 @property (nonatomic, strong) UITableView * chooseCourseTableView;
+@property (nonatomic, strong) CreateGameTableViewDataSource * createGameDataSource;
 
 @end
 
@@ -20,10 +23,27 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"Select Course";
+    
+    self.createGameDataSource = [CreateGameTableViewDataSource new];
+    self.chooseCourseTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+
+    UIBarButtonItem *addCourseButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(add:)];
+    self.navigationItem.rightBarButtonItem = addCourseButton;
     
     self.chooseCourseTableView.delegate = self;
+    self.chooseCourseTableView.dataSource = self.createGameDataSource;
+    
     [self.view addSubview: self.chooseCourseTableView];
+    [self.createGameDataSource registerTableView:self.chooseCourseTableView];
 
+}
+
+- (void)add:(id)sender{
+    AddCourseViewController * addCourseViewController = [AddCourseViewController new];
+    [self.navigationController pushViewController: addCourseViewController animated:YES];
+  
+    
 }
 
 - (void)didReceiveMemoryWarning {
