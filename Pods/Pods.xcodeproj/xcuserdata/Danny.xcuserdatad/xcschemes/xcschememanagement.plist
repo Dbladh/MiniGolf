@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-MiniGolf-Analytics.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MiniGolf-FlurrySDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MiniGolf-PKYStepper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MiniGolf-TRVSDictionaryWithCaseInsensitivity.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31369BCFD079763511651364</key>
+		<key>011B414A77D58C29D0B82FF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6225961AD0FB96CF652AAAE7</key>
+		<key>A6E72AC078C4B1BAB91E956D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA1C931A21A192D26D38D2D5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F99E22D93C345981BBD78ED7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBD83321D957071437A884A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,12 +8,14 @@
 
 #import "AddCourseViewController.h"
 #import "PKYStepper.h"
+#import "CreateGameViewController.h"
 
 @interface AddCourseViewController ()
 
 @property (nonatomic, strong) UITextField * courseNameTextField;
 @property (nonatomic, strong) UITableView * holesNumberTableView;
 @property (nonatomic, strong) PKYStepper * holesNumberStepper;
+@property (nonatomic, strong) UIBarButtonItem * saveCourseButton;
 
 
 
@@ -49,6 +51,17 @@
     
     self.holesNumberTableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 300, 350, 350)];
     [self.view addSubview:self.holesNumberTableView];
+    
+    self.saveCourseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save:)];
+    self.saveCourseButton.title = @"Save";
+    self.saveCourseButton.style = UIBarButtonSystemItemSave;
+    self.navigationItem.rightBarButtonItem = self.saveCourseButton;
+}
+
+-(void)save:(id)sender{
+    CreateGameViewController * createGameViewController = [CreateGameViewController new];
+    [self.navigationController pushViewController:createGameViewController animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

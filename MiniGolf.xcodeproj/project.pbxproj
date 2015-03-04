@@ -1,1354 +1,645 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0F1141E9884E4F11B0DFF663</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF4E7C1947C525E2CDE2B815</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>300E21021A9EB0E20099616A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CreateGameTableViewDataSource.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>300E21031A9EB0E20099616A</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CreateGameTableViewDataSource.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>300E21041A9EB0E20099616A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>300E21031A9EB0E20099616A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564B51A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564C01A990EBD003DAA17</string>
-				<string>306564DD1A990EBD003DAA17</string>
-				<string>306564BF1A990EBD003DAA17</string>
-				<string>30DCE2D31A9D61F1003C97D5</string>
-				<string>E7B8157C4A1AA3D0D655CD7E</string>
-				<string>0F1141E9884E4F11B0DFF663</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564B61A990EBD003DAA17</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Daniel Bladh</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>306564BD1A990EBD003DAA17</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-					</dict>
-					<key>306564D91A990EBD003DAA17</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>TestTargetID</key>
-						<string>306564BD1A990EBD003DAA17</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>306564B91A990EBD003DAA17</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-				<string>he</string>
-			</array>
-			<key>mainGroup</key>
-			<string>306564B51A990EBD003DAA17</string>
-			<key>productRefGroup</key>
-			<string>306564BF1A990EBD003DAA17</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>306564BD1A990EBD003DAA17</string>
-				<string>306564D91A990EBD003DAA17</string>
-			</array>
-		</dict>
-		<key>306564B91A990EBD003DAA17</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>306564E21A990EBD003DAA17</string>
-				<string>306564E31A990EBD003DAA17</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>306564BA1A990EBD003DAA17</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>306564CA1A990EBD003DAA17</string>
-				<string>306564C71A990EBD003DAA17</string>
-				<string>306564F21A991755003DAA17</string>
-				<string>306564CD1A990EBD003DAA17</string>
-				<string>306564EF1A991742003DAA17</string>
-				<string>30DCE2D21A9D61C7003C97D5</string>
-				<string>300E21041A9EB0E20099616A</string>
-				<string>306564EC1A99171E003DAA17</string>
-				<string>306564C41A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>306564BB1A990EBD003DAA17</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>30DCE3F11A9D61F2003C97D5</string>
-				<string>30DCE3EF1A9D61F2003C97D5</string>
-				<string>30DCE3F01A9D61F2003C97D5</string>
-				<string>9D016E8F916F53882930B580</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>306564BC1A990EBD003DAA17</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>306564D01A990EBD003DAA17</string>
-				<string>306564D51A990EBD003DAA17</string>
-				<string>30DCE3F21A9D61F2003C97D5</string>
-				<string>306564D21A990EBD003DAA17</string>
-				<string>30DCE3F41A9D61F2003C97D5</string>
-				<string>30DCE3F31A9D61F2003C97D5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>306564BD1A990EBD003DAA17</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>306564E41A990EBD003DAA17</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9D4A4EAE43D95F84E1B6EDA8</string>
-				<string>306564BA1A990EBD003DAA17</string>
-				<string>306564BB1A990EBD003DAA17</string>
-				<string>306564BC1A990EBD003DAA17</string>
-				<string>930D1E0858C72E2C2729F956</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MiniGolf</string>
-			<key>productName</key>
-			<string>MiniGolf</string>
-			<key>productReference</key>
-			<string>306564BE1A990EBD003DAA17</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>306564BE1A990EBD003DAA17</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MiniGolf.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>306564BF1A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564BE1A990EBD003DAA17</string>
-				<string>306564DA1A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564C01A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564C51A990EBD003DAA17</string>
-				<string>306564C61A990EBD003DAA17</string>
-				<string>306564CB1A990EBD003DAA17</string>
-				<string>306564CC1A990EBD003DAA17</string>
-				<string>307CB90B1A9D76BB001B8CD3</string>
-				<string>307CB90C1A9D76CF001B8CD3</string>
-				<string>30DCE2D01A9D61C7003C97D5</string>
-				<string>30DCE2D11A9D61C7003C97D5</string>
-				<string>306564CE1A990EBD003DAA17</string>
-				<string>306564D11A990EBD003DAA17</string>
-				<string>306564D31A990EBD003DAA17</string>
-				<string>306564C81A990EBD003DAA17</string>
-				<string>306564C11A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MiniGolf</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564C11A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564C21A990EBD003DAA17</string>
-				<string>306564C31A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564C21A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564C31A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564C41A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564C31A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564C51A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564C61A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564C71A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564C61A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564C81A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564C91A990EBD003DAA17</string>
-			</array>
-			<key>currentVersion</key>
-			<string>306564C91A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>MiniGolf.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>306564C91A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>MiniGolf.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564CA1A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564C81A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564CB1A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MainViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564CC1A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MainViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564CD1A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564CC1A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564CE1A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564CF1A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564CF1A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564D01A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564CE1A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564D11A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564D21A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564D11A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564D31A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564D41A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564D41A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564D51A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564D31A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564D61A990EBD003DAA17</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>306564E11A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>306564D71A990EBD003DAA17</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>306564D81A990EBD003DAA17</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>306564D91A990EBD003DAA17</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>306564E71A990EBD003DAA17</string>
-			<key>buildPhases</key>
-			<array>
-				<string>306564D61A990EBD003DAA17</string>
-				<string>306564D71A990EBD003DAA17</string>
-				<string>306564D81A990EBD003DAA17</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>306564DC1A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MiniGolfTests</string>
-			<key>productName</key>
-			<string>MiniGolfTests</string>
-			<key>productReference</key>
-			<string>306564DA1A990EBD003DAA17</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>306564DA1A990EBD003DAA17</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MiniGolfTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>306564DB1A990EBD003DAA17</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>306564B61A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>306564BD1A990EBD003DAA17</string>
-			<key>remoteInfo</key>
-			<string>MiniGolf</string>
-		</dict>
-		<key>306564DC1A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>306564BD1A990EBD003DAA17</string>
-			<key>targetProxy</key>
-			<string>306564DB1A990EBD003DAA17</string>
-		</dict>
-		<key>306564DD1A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564E01A990EBD003DAA17</string>
-				<string>306564DE1A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MiniGolfTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564DE1A990EBD003DAA17</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564DF1A990EBD003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564DF1A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564E01A990EBD003DAA17</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MiniGolfTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564E11A990EBD003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564E01A990EBD003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564E21A990EBD003DAA17</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>306564E31A990EBD003DAA17</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>306564E41A990EBD003DAA17</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>306564E51A990EBD003DAA17</string>
-				<string>306564E61A990EBD003DAA17</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>306564E51A990EBD003DAA17</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>377F9F9EA60CA5E50A5069A1</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/Danny/Documents/FacebookSDK</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MiniGolf/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>306564E61A990EBD003DAA17</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>994014B06B005A03636B1ED8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>/Users/Danny/Documents/FacebookSDK</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MiniGolf/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>306564E71A990EBD003DAA17</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>306564E81A990EBD003DAA17</string>
-				<string>306564E91A990EBD003DAA17</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>306564E81A990EBD003DAA17</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MiniGolfTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>306564E91A990EBD003DAA17</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MiniGolfTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>306564EA1A99171E003DAA17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>CreateGameViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564EB1A99171E003DAA17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CreateGameViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564EC1A99171E003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564EB1A99171E003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564ED1A991742003DAA17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AddCourseViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564EE1A991742003DAA17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AddCourseViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564EF1A991742003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564EE1A991742003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>306564F01A991755003DAA17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>StatsViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564F11A991755003DAA17</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>StatsViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>306564F21A991755003DAA17</key>
-		<dict>
-			<key>fileRef</key>
-			<string>306564F11A991755003DAA17</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>307CB90B1A9D76BB001B8CD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564EA1A99171E003DAA17</string>
-				<string>306564EB1A99171E003DAA17</string>
-				<string>300E21021A9EB0E20099616A</string>
-				<string>300E21031A9EB0E20099616A</string>
-				<string>306564ED1A991742003DAA17</string>
-				<string>306564EE1A991742003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CreateGame</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>307CB90C1A9D76CF001B8CD3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>306564F01A991755003DAA17</string>
-				<string>306564F11A991755003DAA17</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>HistoryStats</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D01A9D61C7003C97D5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FacebookController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D11A9D61C7003C97D5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FacebookController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D21A9D61C7003C97D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DCE2D11A9D61C7003C97D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30DCE2D31A9D61F1003C97D5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>30DCE2D41A9D61F1003C97D5</string>
-				<string>30DCE2D51A9D61F1003C97D5</string>
-				<string>30DCE2D61A9D61F1003C97D5</string>
-				<string>30DCE2D71A9D61F1003C97D5</string>
-				<string>30DCE2D81A9D61F1003C97D5</string>
-				<string>30DCE2D91A9D61F1003C97D5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FacebookSDK</string>
-			<key>path</key>
-			<string>../../FacebookSDK</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D41A9D61F1003C97D5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>Bolts.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D51A9D61F1003C97D5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>FacebookSDK.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D61A9D61F1003C97D5</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>FBAudienceNetwork.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D71A9D61F1003C97D5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>FBAudienceNetwork.README.txt</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D81A9D61F1003C97D5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>LICENSE</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE2D91A9D61F1003C97D5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>README.txt</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>30DCE3EF1A9D61F2003C97D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DCE2D41A9D61F1003C97D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30DCE3F01A9D61F2003C97D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DCE2D51A9D61F1003C97D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30DCE3F11A9D61F2003C97D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DCE2D61A9D61F1003C97D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30DCE3F21A9D61F2003C97D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DCE2D71A9D61F1003C97D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30DCE3F31A9D61F2003C97D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DCE2D81A9D61F1003C97D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>30DCE3F41A9D61F2003C97D5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>30DCE2D91A9D61F1003C97D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>377F9F9EA60CA5E50A5069A1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MiniGolf.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>930D1E0858C72E2C2729F956</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>994014B06B005A03636B1ED8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-MiniGolf.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D016E8F916F53882930B580</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BF4E7C1947C525E2CDE2B815</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9D4A4EAE43D95F84E1B6EDA8</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BF4E7C1947C525E2CDE2B815</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-MiniGolf.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E7B8157C4A1AA3D0D655CD7E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>377F9F9EA60CA5E50A5069A1</string>
-				<string>994014B06B005A03636B1ED8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>306564B61A990EBD003DAA17</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		300E21041A9EB0E20099616A /* CreateGameTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */; };
+		300E21081AA0066C0099616A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300E21061AA0066C0099616A /* Crashlytics.framework */; };
+		300E21091AA0066C0099616A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300E21071AA0066C0099616A /* Fabric.framework */; };
+		3040D9331AA245EC0005964F /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040D9321AA245EC0005964F /* Stack.m */; };
+		3040D9351AA246990005964F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040D9341AA246990005964F /* CoreData.framework */; };
+		3040D9381AA24F3C0005964F /* CourseCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */; };
+		306564C41A990EBD003DAA17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C31A990EBD003DAA17 /* main.m */; };
+		306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C61A990EBD003DAA17 /* AppDelegate.m */; };
+		306564CA1A990EBD003DAA17 /* MiniGolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */; };
+		306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564CC1A990EBD003DAA17 /* MainViewController.m */; };
+		306564D01A990EBD003DAA17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306564CE1A990EBD003DAA17 /* Main.storyboard */; };
+		306564D21A990EBD003DAA17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306564D11A990EBD003DAA17 /* Images.xcassets */; };
+		306564D51A990EBD003DAA17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306564D31A990EBD003DAA17 /* LaunchScreen.xib */; };
+		306564E11A990EBD003DAA17 /* MiniGolfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564E01A990EBD003DAA17 /* MiniGolfTests.m */; };
+		306564EC1A99171E003DAA17 /* CreateGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564EB1A99171E003DAA17 /* CreateGameViewController.m */; };
+		306564EF1A991742003DAA17 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564EE1A991742003DAA17 /* AddCourseViewController.m */; };
+		306564F21A991755003DAA17 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564F11A991755003DAA17 /* StatsViewController.m */; };
+		30DCE2D21A9D61C7003C97D5 /* FacebookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DCE2D11A9D61C7003C97D5 /* FacebookController.m */; };
+		30DCE3EF1A9D61F2003C97D5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DCE2D41A9D61F1003C97D5 /* Bolts.framework */; };
+		30DCE3F01A9D61F2003C97D5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DCE2D51A9D61F1003C97D5 /* FacebookSDK.framework */; };
+		30DCE3F11A9D61F2003C97D5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DCE2D61A9D61F1003C97D5 /* FBAudienceNetwork.framework */; };
+		30DCE3F21A9D61F2003C97D5 /* FBAudienceNetwork.README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30DCE2D71A9D61F1003C97D5 /* FBAudienceNetwork.README.txt */; };
+		30DCE3F31A9D61F2003C97D5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30DCE2D81A9D61F1003C97D5 /* LICENSE */; };
+		30DCE3F41A9D61F2003C97D5 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30DCE2D91A9D61F1003C97D5 /* README.txt */; };
+		9D016E8F916F53882930B580 /* libPods-MiniGolf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4E7C1947C525E2CDE2B815 /* libPods-MiniGolf.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		306564DB1A990EBD003DAA17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 306564B61A990EBD003DAA17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 306564BD1A990EBD003DAA17;
+			remoteInfo = MiniGolf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		300E21021A9EB0E20099616A /* CreateGameTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGameTableViewDataSource.h; sourceTree = "<group>"; };
+		300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGameTableViewDataSource.m; sourceTree = "<group>"; };
+		300E21061AA0066C0099616A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		300E21071AA0066C0099616A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		3040D9311AA245EC0005964F /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		3040D9321AA245EC0005964F /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		3040D9341AA246990005964F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3040D9361AA24F3C0005964F /* CourseCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCustomTableViewCell.h; sourceTree = "<group>"; };
+		3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCustomTableViewCell.m; sourceTree = "<group>"; };
+		306564BE1A990EBD003DAA17 /* MiniGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		306564C21A990EBD003DAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306564C31A990EBD003DAA17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		306564C51A990EBD003DAA17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		306564C61A990EBD003DAA17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniGolf.xcdatamodel; sourceTree = "<group>"; };
+		306564CB1A990EBD003DAA17 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		306564CC1A990EBD003DAA17 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		306564CF1A990EBD003DAA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		306564D11A990EBD003DAA17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		306564D41A990EBD003DAA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		306564DA1A990EBD003DAA17 /* MiniGolfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniGolfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		306564DF1A990EBD003DAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306564E01A990EBD003DAA17 /* MiniGolfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniGolfTests.m; sourceTree = "<group>"; };
+		306564EA1A99171E003DAA17 /* CreateGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateGameViewController.h; sourceTree = "<group>"; };
+		306564EB1A99171E003DAA17 /* CreateGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGameViewController.m; sourceTree = "<group>"; };
+		306564ED1A991742003DAA17 /* AddCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCourseViewController.h; sourceTree = "<group>"; };
+		306564EE1A991742003DAA17 /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
+		306564F01A991755003DAA17 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
+		306564F11A991755003DAA17 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		30DCE2D01A9D61C7003C97D5 /* FacebookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookController.h; sourceTree = "<group>"; };
+		30DCE2D11A9D61C7003C97D5 /* FacebookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookController.m; sourceTree = "<group>"; };
+		30DCE2D41A9D61F1003C97D5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		30DCE2D51A9D61F1003C97D5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		30DCE2D61A9D61F1003C97D5 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		30DCE2D71A9D61F1003C97D5 /* FBAudienceNetwork.README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FBAudienceNetwork.README.txt; sourceTree = "<group>"; };
+		30DCE2D81A9D61F1003C97D5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		30DCE2D91A9D61F1003C97D5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		377F9F9EA60CA5E50A5069A1 /* Pods-MiniGolf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.debug.xcconfig"; sourceTree = "<group>"; };
+		994014B06B005A03636B1ED8 /* Pods-MiniGolf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolf.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.release.xcconfig"; sourceTree = "<group>"; };
+		BF4E7C1947C525E2CDE2B815 /* libPods-MiniGolf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiniGolf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		306564BB1A990EBD003DAA17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3040D9351AA246990005964F /* CoreData.framework in Frameworks */,
+				30DCE3F11A9D61F2003C97D5 /* FBAudienceNetwork.framework in Frameworks */,
+				300E21081AA0066C0099616A /* Crashlytics.framework in Frameworks */,
+				30DCE3EF1A9D61F2003C97D5 /* Bolts.framework in Frameworks */,
+				30DCE3F01A9D61F2003C97D5 /* FacebookSDK.framework in Frameworks */,
+				9D016E8F916F53882930B580 /* libPods-MiniGolf.a in Frameworks */,
+				300E21091AA0066C0099616A /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306564D71A990EBD003DAA17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F1141E9884E4F11B0DFF663 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3040D9341AA246990005964F /* CoreData.framework */,
+				300E21061AA0066C0099616A /* Crashlytics.framework */,
+				300E21071AA0066C0099616A /* Fabric.framework */,
+				BF4E7C1947C525E2CDE2B815 /* libPods-MiniGolf.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3040D92A1AA2260F0005964F /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				30DCE2D01A9D61C7003C97D5 /* FacebookController.h */,
+				30DCE2D11A9D61C7003C97D5 /* FacebookController.m */,
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
+		306564B51A990EBD003DAA17 = {
+			isa = PBXGroup;
+			children = (
+				306564C01A990EBD003DAA17 /* MiniGolf */,
+				306564DD1A990EBD003DAA17 /* MiniGolfTests */,
+				306564BF1A990EBD003DAA17 /* Products */,
+				30DCE2D31A9D61F1003C97D5 /* FacebookSDK */,
+				E7B8157C4A1AA3D0D655CD7E /* Pods */,
+				0F1141E9884E4F11B0DFF663 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		306564BF1A990EBD003DAA17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				306564BE1A990EBD003DAA17 /* MiniGolf.app */,
+				306564DA1A990EBD003DAA17 /* MiniGolfTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		306564C01A990EBD003DAA17 /* MiniGolf */ = {
+			isa = PBXGroup;
+			children = (
+				306564C51A990EBD003DAA17 /* AppDelegate.h */,
+				306564C61A990EBD003DAA17 /* AppDelegate.m */,
+				306564CB1A990EBD003DAA17 /* MainViewController.h */,
+				306564CC1A990EBD003DAA17 /* MainViewController.m */,
+				307CB90B1A9D76BB001B8CD3 /* CreateGame */,
+				307CB90C1A9D76CF001B8CD3 /* HistoryStats */,
+				3040D92A1AA2260F0005964F /* Facebook */,
+				3040D9311AA245EC0005964F /* Stack.h */,
+				3040D9321AA245EC0005964F /* Stack.m */,
+				306564CE1A990EBD003DAA17 /* Main.storyboard */,
+				306564D11A990EBD003DAA17 /* Images.xcassets */,
+				306564D31A990EBD003DAA17 /* LaunchScreen.xib */,
+				306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */,
+				306564C11A990EBD003DAA17 /* Supporting Files */,
+			);
+			path = MiniGolf;
+			sourceTree = "<group>";
+		};
+		306564C11A990EBD003DAA17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				306564C21A990EBD003DAA17 /* Info.plist */,
+				306564C31A990EBD003DAA17 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		306564DD1A990EBD003DAA17 /* MiniGolfTests */ = {
+			isa = PBXGroup;
+			children = (
+				306564E01A990EBD003DAA17 /* MiniGolfTests.m */,
+				306564DE1A990EBD003DAA17 /* Supporting Files */,
+			);
+			path = MiniGolfTests;
+			sourceTree = "<group>";
+		};
+		306564DE1A990EBD003DAA17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				306564DF1A990EBD003DAA17 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		307CB90B1A9D76BB001B8CD3 /* CreateGame */ = {
+			isa = PBXGroup;
+			children = (
+				306564EA1A99171E003DAA17 /* CreateGameViewController.h */,
+				306564EB1A99171E003DAA17 /* CreateGameViewController.m */,
+				300E21021A9EB0E20099616A /* CreateGameTableViewDataSource.h */,
+				300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */,
+				306564ED1A991742003DAA17 /* AddCourseViewController.h */,
+				306564EE1A991742003DAA17 /* AddCourseViewController.m */,
+				3040D9361AA24F3C0005964F /* CourseCustomTableViewCell.h */,
+				3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */,
+			);
+			name = CreateGame;
+			sourceTree = "<group>";
+		};
+		307CB90C1A9D76CF001B8CD3 /* HistoryStats */ = {
+			isa = PBXGroup;
+			children = (
+				306564F01A991755003DAA17 /* StatsViewController.h */,
+				306564F11A991755003DAA17 /* StatsViewController.m */,
+			);
+			name = HistoryStats;
+			sourceTree = "<group>";
+		};
+		30DCE2D31A9D61F1003C97D5 /* FacebookSDK */ = {
+			isa = PBXGroup;
+			children = (
+				30DCE2D41A9D61F1003C97D5 /* Bolts.framework */,
+				30DCE2D51A9D61F1003C97D5 /* FacebookSDK.framework */,
+				30DCE2D61A9D61F1003C97D5 /* FBAudienceNetwork.framework */,
+				30DCE2D71A9D61F1003C97D5 /* FBAudienceNetwork.README.txt */,
+				30DCE2D81A9D61F1003C97D5 /* LICENSE */,
+				30DCE2D91A9D61F1003C97D5 /* README.txt */,
+			);
+			name = FacebookSDK;
+			path = ../../FacebookSDK;
+			sourceTree = "<group>";
+		};
+		E7B8157C4A1AA3D0D655CD7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				377F9F9EA60CA5E50A5069A1 /* Pods-MiniGolf.debug.xcconfig */,
+				994014B06B005A03636B1ED8 /* Pods-MiniGolf.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		306564BD1A990EBD003DAA17 /* MiniGolf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306564E41A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolf" */;
+			buildPhases = (
+				9D4A4EAE43D95F84E1B6EDA8 /* Check Pods Manifest.lock */,
+				306564BA1A990EBD003DAA17 /* Sources */,
+				306564BB1A990EBD003DAA17 /* Frameworks */,
+				306564BC1A990EBD003DAA17 /* Resources */,
+				930D1E0858C72E2C2729F956 /* Copy Pods Resources */,
+				300E21051AA0061A0099616A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniGolf;
+			productName = MiniGolf;
+			productReference = 306564BE1A990EBD003DAA17 /* MiniGolf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		306564D91A990EBD003DAA17 /* MiniGolfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306564E71A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolfTests" */;
+			buildPhases = (
+				306564D61A990EBD003DAA17 /* Sources */,
+				306564D71A990EBD003DAA17 /* Frameworks */,
+				306564D81A990EBD003DAA17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				306564DC1A990EBD003DAA17 /* PBXTargetDependency */,
+			);
+			name = MiniGolfTests;
+			productName = MiniGolfTests;
+			productReference = 306564DA1A990EBD003DAA17 /* MiniGolfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		306564B61A990EBD003DAA17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Daniel Bladh";
+				TargetAttributes = {
+					306564BD1A990EBD003DAA17 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					306564D91A990EBD003DAA17 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 306564BD1A990EBD003DAA17;
+					};
+				};
+			};
+			buildConfigurationList = 306564B91A990EBD003DAA17 /* Build configuration list for PBXProject "MiniGolf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				he,
+			);
+			mainGroup = 306564B51A990EBD003DAA17;
+			productRefGroup = 306564BF1A990EBD003DAA17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				306564BD1A990EBD003DAA17 /* MiniGolf */,
+				306564D91A990EBD003DAA17 /* MiniGolfTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		306564BC1A990EBD003DAA17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306564D01A990EBD003DAA17 /* Main.storyboard in Resources */,
+				306564D51A990EBD003DAA17 /* LaunchScreen.xib in Resources */,
+				30DCE3F21A9D61F2003C97D5 /* FBAudienceNetwork.README.txt in Resources */,
+				306564D21A990EBD003DAA17 /* Images.xcassets in Resources */,
+				30DCE3F41A9D61F2003C97D5 /* README.txt in Resources */,
+				30DCE3F31A9D61F2003C97D5 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306564D81A990EBD003DAA17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		300E21051AA0061A0099616A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 106e29df21ad7bd4e20bd6d655aed2c9be6b321a 1fab6792f4c693a7ef70220bfdde6b3b573a8d65230d3f84dcb634bd4739c82c";
+		};
+		930D1E0858C72E2C2729F956 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D4A4EAE43D95F84E1B6EDA8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		306564BA1A990EBD003DAA17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306564CA1A990EBD003DAA17 /* MiniGolf.xcdatamodeld in Sources */,
+				306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */,
+				306564F21A991755003DAA17 /* StatsViewController.m in Sources */,
+				306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */,
+				306564EF1A991742003DAA17 /* AddCourseViewController.m in Sources */,
+				30DCE2D21A9D61C7003C97D5 /* FacebookController.m in Sources */,
+				3040D9381AA24F3C0005964F /* CourseCustomTableViewCell.m in Sources */,
+				300E21041A9EB0E20099616A /* CreateGameTableViewDataSource.m in Sources */,
+				306564EC1A99171E003DAA17 /* CreateGameViewController.m in Sources */,
+				3040D9331AA245EC0005964F /* Stack.m in Sources */,
+				306564C41A990EBD003DAA17 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		306564D61A990EBD003DAA17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306564E11A990EBD003DAA17 /* MiniGolfTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		306564DC1A990EBD003DAA17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 306564BD1A990EBD003DAA17 /* MiniGolf */;
+			targetProxy = 306564DB1A990EBD003DAA17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		306564CE1A990EBD003DAA17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				306564CF1A990EBD003DAA17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		306564D31A990EBD003DAA17 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				306564D41A990EBD003DAA17 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		306564E21A990EBD003DAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		306564E31A990EBD003DAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		306564E51A990EBD003DAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 377F9F9EA60CA5E50A5069A1 /* Pods-MiniGolf.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Danny/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MiniGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		306564E61A990EBD003DAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 994014B06B005A03636B1ED8 /* Pods-MiniGolf.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Danny/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MiniGolf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		306564E81A990EBD003DAA17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiniGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf";
+			};
+			name = Debug;
+		};
+		306564E91A990EBD003DAA17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MiniGolfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGolf.app/MiniGolf";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		306564B91A990EBD003DAA17 /* Build configuration list for PBXProject "MiniGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306564E21A990EBD003DAA17 /* Debug */,
+				306564E31A990EBD003DAA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306564E41A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306564E51A990EBD003DAA17 /* Debug */,
+				306564E61A990EBD003DAA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		306564E71A990EBD003DAA17 /* Build configuration list for PBXNativeTarget "MiniGolfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306564E81A990EBD003DAA17 /* Debug */,
+				306564E91A990EBD003DAA17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */,
+			);
+			currentVersion = 306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */;
+			path = MiniGolf.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 306564B61A990EBD003DAA17 /* Project object */;
+}

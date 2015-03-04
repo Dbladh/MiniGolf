@@ -4,6 +4,8 @@
 target 'MiniGolf' do
 
 pod 'PKYStepper'
+pod 'Analytics/Flurry'
+
 end
 
 target 'MiniGolfTests' do
