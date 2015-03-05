@@ -45,40 +45,6 @@
     return cell;
 }
 
-//- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
-//    self.createGameViewController = [CreateGameViewController new];
-//
-//    [self.createGameViewController.chooseCourseTableView beginUpdates];
-//}
-//
-//- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
-//    self.createGameViewController = [CreateGameViewController new];
-//
-//    [self.createGameViewController.chooseCourseTableView endUpdates];
-//}
-//
-//- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
-////    self.createGameViewController = [CreateGameViewController new];
-//
-//    switch (type) {
-//        case NSFetchedResultsChangeInsert:
-//            [self.coursesTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-//            break;
-//        case NSFetchedResultsChangeMove:
-//            [self.coursesTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-//            [self.coursesTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-//            break;
-//        case NSFetchedResultsChangeDelete:
-//            [self.coursesTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//            break;
-//        case NSFetchedResultsChangeUpdate:
-//            [self.coursesTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-//            break;
-//        default:
-//            break;
-//    }
-//}
-
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 75;
 }

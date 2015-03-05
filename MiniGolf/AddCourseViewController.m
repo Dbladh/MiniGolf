@@ -66,7 +66,7 @@
     
     if (!self.thisCourse){
         
-        [[CourseController sharedInstance] addEntryWithTitle:self.courseNameTextField.text andText:self.holesNumberStepper.countLabel.text];
+        [[CourseController sharedInstance] addCourseWithTitle:self.courseNameTextField.text andText:self.holesNumberStepper.countLabel.text];
     }else{
         self.thisCourse.course = self.courseNameTextField.text;
         self.thisCourse.hole = self.holesNumberStepper.countLabel.text;

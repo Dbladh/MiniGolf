@@ -56,25 +56,11 @@
     
 }
 
-
-
 - (void)add:(id)sender{
     AddCourseViewController * addCourseViewController = [AddCourseViewController new];
     [self.navigationController pushViewController: addCourseViewController animated:YES];
   
-    
 }
-
-//-(void)configureFetchedResultsController{
-//    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Course"];
-//    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"course" ascending:YES]];
-//    self.fetchedResultsController = [[NSFetchedResultsController alloc]initWithFetchRequest:fetchRequest managedObjectContext:[Stack sharedInstance].managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-//    
-//    self.fetchedResultsController.delegate = self;
-//    [self.fetchedResultsController performFetch:nil];
-//    
-//}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -93,6 +79,7 @@
     [self.chooseCourseTableView endUpdates];
 }
 
+#pragma mark - Delete Cell From TableView
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
     

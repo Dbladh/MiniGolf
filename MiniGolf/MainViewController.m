@@ -31,9 +31,6 @@
     //[facebookController loginViewFetchedUserInfo: andViewController:self user:];
     
     
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning { 

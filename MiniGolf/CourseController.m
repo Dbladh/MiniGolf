@@ -8,6 +8,7 @@
 
 #import "CourseController.h"
 #import "Stack.h"
+#import <Parse/Parse.h>
 
 
 @interface CourseController ()
@@ -29,14 +30,19 @@
     return sharedInstance;
 }
 
--(void)addEntryWithTitle:(NSString *)course andText:(NSString *)hole{
+-(void)addCourseWithTitle:(NSString *)courseName andText:(NSString *)hole{
     
     Course *addCourse =  [NSEntityDescription insertNewObjectForEntityForName:@"Course"
                                                      inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
-    addCourse.course = course;
+    addCourse.course = courseName;
     addCourse.hole = hole;
     
     [self synchronize];
+    
+    PFObject *course = [PFObject objectWithClassName:@"Course"];
+    course[@"name"] = courseName;
+    course[@"hole"] = hole;
+    [course saveInBackground];
 }
 
 -(void)removeEntry:(Course *)course{
