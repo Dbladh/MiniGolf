@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Course.h"
+#import "CourseController.h"
 
 @interface AddCourseViewController : UIViewController
+
+@property (nonatomic, strong) Course *thisCourse;
 
 @end

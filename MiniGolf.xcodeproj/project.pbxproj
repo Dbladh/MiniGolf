@@ -15,7 +15,6 @@
 		3040D9381AA24F3C0005964F /* CourseCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */; };
 		306564C41A990EBD003DAA17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C31A990EBD003DAA17 /* main.m */; };
 		306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C61A990EBD003DAA17 /* AppDelegate.m */; };
-		306564CA1A990EBD003DAA17 /* MiniGolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */; };
 		306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564CC1A990EBD003DAA17 /* MainViewController.m */; };
 		306564D01A990EBD003DAA17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306564CE1A990EBD003DAA17 /* Main.storyboard */; };
 		306564D21A990EBD003DAA17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306564D11A990EBD003DAA17 /* Images.xcassets */; };
@@ -24,6 +23,9 @@
 		306564EC1A99171E003DAA17 /* CreateGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564EB1A99171E003DAA17 /* CreateGameViewController.m */; };
 		306564EF1A991742003DAA17 /* AddCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564EE1A991742003DAA17 /* AddCourseViewController.m */; };
 		306564F21A991755003DAA17 /* StatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564F11A991755003DAA17 /* StatsViewController.m */; };
+		30B198D41AA69D490092F3DF /* CourseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B198D31AA69D490092F3DF /* CourseController.m */; };
+		30B198D71AA69F3F0092F3DF /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B198D61AA69F3F0092F3DF /* Course.m */; };
+		30B198DC1AA6A9B70092F3DF /* MiniGolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30B198DA1AA6A9B70092F3DF /* MiniGolf.xcdatamodeld */; };
 		30DCE2D21A9D61C7003C97D5 /* FacebookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DCE2D11A9D61C7003C97D5 /* FacebookController.m */; };
 		30DCE3EF1A9D61F2003C97D5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DCE2D41A9D61F1003C97D5 /* Bolts.framework */; };
 		30DCE3F01A9D61F2003C97D5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DCE2D51A9D61F1003C97D5 /* FacebookSDK.framework */; };
@@ -59,7 +61,6 @@
 		306564C31A990EBD003DAA17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		306564C51A990EBD003DAA17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		306564C61A990EBD003DAA17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniGolf.xcdatamodel; sourceTree = "<group>"; };
 		306564CB1A990EBD003DAA17 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		306564CC1A990EBD003DAA17 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		306564CF1A990EBD003DAA17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +75,11 @@
 		306564EE1A991742003DAA17 /* AddCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCourseViewController.m; sourceTree = "<group>"; };
 		306564F01A991755003DAA17 /* StatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatsViewController.h; sourceTree = "<group>"; };
 		306564F11A991755003DAA17 /* StatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatsViewController.m; sourceTree = "<group>"; };
+		30B198D21AA69D490092F3DF /* CourseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseController.h; sourceTree = "<group>"; };
+		30B198D31AA69D490092F3DF /* CourseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseController.m; sourceTree = "<group>"; };
+		30B198D51AA69F3F0092F3DF /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		30B198D61AA69F3F0092F3DF /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		30B198DB1AA6A9B70092F3DF /* MiniGolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniGolf.xcdatamodel; sourceTree = "<group>"; };
 		30DCE2D01A9D61C7003C97D5 /* FacebookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookController.h; sourceTree = "<group>"; };
 		30DCE2D11A9D61C7003C97D5 /* FacebookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookController.m; sourceTree = "<group>"; };
 		30DCE2D41A9D61F1003C97D5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -165,10 +171,10 @@
 				3040D92A1AA2260F0005964F /* Facebook */,
 				3040D9311AA245EC0005964F /* Stack.h */,
 				3040D9321AA245EC0005964F /* Stack.m */,
+				30B198DA1AA6A9B70092F3DF /* MiniGolf.xcdatamodeld */,
 				306564CE1A990EBD003DAA17 /* Main.storyboard */,
 				306564D11A990EBD003DAA17 /* Images.xcassets */,
 				306564D31A990EBD003DAA17 /* LaunchScreen.xib */,
-				306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */,
 				306564C11A990EBD003DAA17 /* Supporting Files */,
 			);
 			path = MiniGolf;
@@ -211,6 +217,10 @@
 				306564EE1A991742003DAA17 /* AddCourseViewController.m */,
 				3040D9361AA24F3C0005964F /* CourseCustomTableViewCell.h */,
 				3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */,
+				30B198D21AA69D490092F3DF /* CourseController.h */,
+				30B198D31AA69D490092F3DF /* CourseController.m */,
+				30B198D51AA69F3F0092F3DF /* Course.h */,
+				30B198D61AA69F3F0092F3DF /* Course.m */,
 			);
 			name = CreateGame;
 			sourceTree = "<group>";
@@ -400,8 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306564CA1A990EBD003DAA17 /* MiniGolf.xcdatamodeld in Sources */,
+				30B198D71AA69F3F0092F3DF /* Course.m in Sources */,
+				30B198DC1AA6A9B70092F3DF /* MiniGolf.xcdatamodeld in Sources */,
 				306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */,
+				30B198D41AA69D490092F3DF /* CourseController.m in Sources */,
 				306564F21A991755003DAA17 /* StatsViewController.m in Sources */,
 				306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */,
 				306564EF1A991742003DAA17 /* AddCourseViewController.m in Sources */,
@@ -629,12 +641,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		306564C81A990EBD003DAA17 /* MiniGolf.xcdatamodeld */ = {
+		30B198DA1AA6A9B70092F3DF /* MiniGolf.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */,
+				30B198DB1AA6A9B70092F3DF /* MiniGolf.xcdatamodel */,
 			);
-			currentVersion = 306564C91A990EBD003DAA17 /* MiniGolf.xcdatamodel */;
+			currentVersion = 30B198DB1AA6A9B70092F3DF /* MiniGolf.xcdatamodel */;
 			path = MiniGolf.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

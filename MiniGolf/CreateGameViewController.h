@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateGameViewController : UIViewController 
+@interface CreateGameViewController : UIViewController
+
+@property (nonatomic, strong) UITableView * chooseCourseTableView;
 
 @end

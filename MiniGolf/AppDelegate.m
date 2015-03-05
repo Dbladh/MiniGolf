@@ -54,14 +54,9 @@
     UINavigationController * statsNavController = [[UINavigationController alloc]initWithRootViewController:statsViewController];
     statsViewController.tabBarItem.title = @"Stats";
     statsViewController.tabBarItem.image = [UIImage imageNamed: @"tabicon"];
-    
-    AddCourseViewController * addCourseViewController = [AddCourseViewController new];
-    UINavigationController * addCourseNavController = [[UINavigationController alloc]initWithRootViewController:addCourseViewController];
-    addCourseViewController.tabBarItem.title = @"Add Course";
-    addCourseViewController.tabBarItem.image = [UIImage imageNamed: @"tabicon"];
-    
+
     UITabBarController *tabBarController = [UITabBarController new];
-    tabBarController.viewControllers = @[mainNavController, createGameNavController, addCourseNavController, statsNavController];
+    tabBarController.viewControllers = @[mainNavController, createGameNavController, statsNavController];
     
     self.window.rootViewController = tabBarController;
 

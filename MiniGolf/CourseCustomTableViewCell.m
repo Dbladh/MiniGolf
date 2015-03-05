@@ -10,6 +10,19 @@
 
 @implementation CourseCustomTableViewCell
 
+-(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    
+    
+    self = [super initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell One"];
+    self.textLabel.font = [UIFont fontWithName:@"TrebuchetMS-Bold" size:75];
+    
+    
+    
+    return self;
+}
+
+
+
 - (void)awakeFromNib {
     // Initialization code
 }

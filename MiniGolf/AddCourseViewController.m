@@ -9,6 +9,9 @@
 #import "AddCourseViewController.h"
 #import "PKYStepper.h"
 #import "CreateGameViewController.h"
+#import "CreateGameTableViewDataSource.h"
+
+
 
 @interface AddCourseViewController ()
 
@@ -16,6 +19,7 @@
 @property (nonatomic, strong) UITableView * holesNumberTableView;
 @property (nonatomic, strong) PKYStepper * holesNumberStepper;
 @property (nonatomic, strong) UIBarButtonItem * saveCourseButton;
+
 
 
 
@@ -59,10 +63,28 @@
 }
 
 -(void)save:(id)sender{
+    
+    if (!self.thisCourse){
+        
+        [[CourseController sharedInstance] addEntryWithTitle:self.courseNameTextField.text andText:self.holesNumberStepper.countLabel.text];
+    }else{
+        self.thisCourse.course = self.courseNameTextField.text;
+        self.thisCourse.hole = self.holesNumberStepper.countLabel.text;
+    
+    }
+
+    [[CourseController sharedInstance] synchronize];
+    
     CreateGameViewController * createGameViewController = [CreateGameViewController new];
-    [self.navigationController pushViewController:createGameViewController animated:YES];
+    [createGameViewController.chooseCourseTableView reloadData];
+    
+
+    //CreateGameViewController * createGameViewController = [CreateGameViewController new];
+    [self.navigationController popToViewController: [self.navigationController.viewControllers objectAtIndex:0] animated:YES];
+
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

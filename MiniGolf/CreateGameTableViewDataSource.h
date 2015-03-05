@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Stack.h"
+
+
 
 @interface CreateGameTableViewDataSource : NSObject <UITableViewDataSource>
 
+@property (nonatomic, strong)NSFetchedResultsController *fetchedResultsController;
+
 - (void)registerTableView:(UITableView *)chooseCourseTableView;
+
 
 @end
