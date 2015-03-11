@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_PKYStepper 0
 #define COCOAPODS_VERSION_PATCH_PKYStepper 1
 
+// SAStepperControl
+#define COCOAPODS_POD_AVAILABLE_SAStepperControl
+#define COCOAPODS_VERSION_MAJOR_SAStepperControl 0
+#define COCOAPODS_VERSION_MINOR_SAStepperControl 1
+#define COCOAPODS_VERSION_PATCH_SAStepperControl 3
+
 // TRVSDictionaryWithCaseInsensitivity
 #define COCOAPODS_POD_AVAILABLE_TRVSDictionaryWithCaseInsensitivity
 #define COCOAPODS_VERSION_MAJOR_TRVSDictionaryWithCaseInsensitivity 0

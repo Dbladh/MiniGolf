@@ -40,7 +40,15 @@
     
     [mainViewController.view addSubview: self.profilePictureView];
     
+    PFObject *fbUser = [PFObject objectWithClassName:@"FBUser"];
+    fbUser[@"User"] = (id<FBGraphUser>)user;
+    [fbUser saveInBackground];
+    
     }
+
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView{
+    
+}
 
 
 @end

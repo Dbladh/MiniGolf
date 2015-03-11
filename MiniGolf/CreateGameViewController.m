@@ -10,13 +10,14 @@
 #import "CreateGameTableViewDataSource.h"
 #import "AddCourseViewController.h"
 #import "CourseCustomTableViewCell.h"
+#import "ChoosePlayerViewController.h"
 #import "Stack.h"
 
 @interface CreateGameViewController () <UITableViewDelegate, UIPopoverControllerDelegate, NSFetchedResultsControllerDelegate>
 
 
 @property (nonatomic, strong) CreateGameTableViewDataSource * createGameDataSource;
-@property (nonatomic, strong)NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 @end
 
@@ -77,6 +78,16 @@
     
     
     [self.chooseCourseTableView endUpdates];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%ld", (long)indexPath.row);
+    
+    ChoosePlayerViewController * choosePlayerViewController = [ChoosePlayerViewController new];
+    [self.navigationController pushViewController:choosePlayerViewController animated:YES];
+    
+    
+    
 }
 
 #pragma mark - Delete Cell From TableView

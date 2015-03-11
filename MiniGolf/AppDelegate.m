@@ -16,6 +16,7 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 
+
 @interface AppDelegate ()
 
 @end
@@ -68,8 +69,6 @@
     
     self.window.rootViewController = tabBarController;
     
-    
-    
     return YES;
 }
 
@@ -92,6 +91,8 @@
     
     // Logs 'install' and 'app activate' App Events.
     [FBAppEvents activateApp];
+    [FBAppCall handleDidBecomeActive];
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

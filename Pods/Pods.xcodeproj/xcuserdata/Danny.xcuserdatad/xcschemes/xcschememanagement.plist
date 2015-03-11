@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MiniGolf-SAStepperControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MiniGolf-TRVSDictionaryWithCaseInsensitivity.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>011B414A77D58C29D0B82FF3</key>
+		<key>2CCC1D57BC87E8B30E7CB04F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6E72AC078C4B1BAB91E956D</key>
+		<key>47BF63836AC8F02888EA265E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA1C931A21A192D26D38D2D5</key>
+		<key>55CFA215A86290760B31B042</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F99E22D93C345981BBD78ED7</key>
+		<key>6AB867715B5DA3F13E47DD44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBD83321D957071437A884A8</key>
+		<key>AF531209A5410E655E79E111</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAA8A6CD08FEDA4BEE094B75</key>
 		<dict>
 			<key>primary</key>
 			<true/>

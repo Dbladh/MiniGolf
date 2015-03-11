@@ -44,7 +44,11 @@
 		30DCE3F31A9D61F2003C97D5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30DCE2D81A9D61F1003C97D5 /* LICENSE */; };
 		30DCE3F41A9D61F2003C97D5 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 30DCE2D91A9D61F1003C97D5 /* README.txt */; };
 		30EFE6A31AA7FCA6007358B0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EFE6A21AA7FCA6007358B0 /* Social.framework */; };
+		30F3058A1AAB96880030F455 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F305891AAB96880030F455 /* AddressBook.framework */; };
+		30F3058C1AAB968E0030F455 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F3058B1AAB968E0030F455 /* AddressBookUI.framework */; };
+		30F3058F1AAFD9AF0030F455 /* holesTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F3058E1AAFD9AF0030F455 /* holesTableViewDataSource.m */; };
 		30FBEAAC1AA8046F0028DB24 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FBEAAA1AA8046F0028DB24 /* Parse.framework */; };
+		30FBEAB41AAB661E0028DB24 /* ChoosePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FBEAB31AAB661E0028DB24 /* ChoosePlayerViewController.m */; };
 		9D016E8F916F53882930B580 /* libPods-MiniGolf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4E7C1947C525E2CDE2B815 /* libPods-MiniGolf.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -111,7 +115,13 @@
 		30DCE2D81A9D61F1003C97D5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		30DCE2D91A9D61F1003C97D5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		30EFE6A21AA7FCA6007358B0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		30F305891AAB96880030F455 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		30F3058B1AAB968E0030F455 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		30F3058D1AAFD9AF0030F455 /* holesTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = holesTableViewDataSource.h; sourceTree = "<group>"; };
+		30F3058E1AAFD9AF0030F455 /* holesTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = holesTableViewDataSource.m; sourceTree = "<group>"; };
 		30FBEAAA1AA8046F0028DB24 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
+		30FBEAB21AAB661E0028DB24 /* ChoosePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePlayerViewController.h; sourceTree = "<group>"; };
+		30FBEAB31AAB661E0028DB24 /* ChoosePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePlayerViewController.m; sourceTree = "<group>"; };
 		377F9F9EA60CA5E50A5069A1 /* Pods-MiniGolf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.debug.xcconfig"; sourceTree = "<group>"; };
 		994014B06B005A03636B1ED8 /* Pods-MiniGolf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniGolf.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiniGolf/Pods-MiniGolf.release.xcconfig"; sourceTree = "<group>"; };
 		BF4E7C1947C525E2CDE2B815 /* libPods-MiniGolf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MiniGolf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F3058C1AAB968E0030F455 /* AddressBookUI.framework in Frameworks */,
+				30F3058A1AAB96880030F455 /* AddressBook.framework in Frameworks */,
 				30EFE6A31AA7FCA6007358B0 /* Social.framework in Frameworks */,
 				30B198F81AA7F9300092F3DF /* libsqlite3.dylib in Frameworks */,
 				30B198F61AA7F91B0092F3DF /* libz.dylib in Frameworks */,
@@ -157,6 +169,8 @@
 		0F1141E9884E4F11B0DFF663 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30F3058B1AAB968E0030F455 /* AddressBookUI.framework */,
+				30F305891AAB96880030F455 /* AddressBook.framework */,
 				30FBEAAA1AA8046F0028DB24 /* Parse.framework */,
 				30DCE2D61A9D61F1003C97D5 /* FBAudienceNetwork.framework */,
 				30DCE2D51A9D61F1003C97D5 /* FacebookSDK.framework */,
@@ -260,18 +274,8 @@
 		307CB90B1A9D76BB001B8CD3 /* CreateGame */ = {
 			isa = PBXGroup;
 			children = (
-				306564EA1A99171E003DAA17 /* CreateGameViewController.h */,
-				306564EB1A99171E003DAA17 /* CreateGameViewController.m */,
-				300E21021A9EB0E20099616A /* CreateGameTableViewDataSource.h */,
-				300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */,
-				306564ED1A991742003DAA17 /* AddCourseViewController.h */,
-				306564EE1A991742003DAA17 /* AddCourseViewController.m */,
-				3040D9361AA24F3C0005964F /* CourseCustomTableViewCell.h */,
-				3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */,
-				30B198D21AA69D490092F3DF /* CourseController.h */,
-				30B198D31AA69D490092F3DF /* CourseController.m */,
-				30B198D51AA69F3F0092F3DF /* Course.h */,
-				30B198D61AA69F3F0092F3DF /* Course.m */,
+				30FBEAAD1AAB62610028DB24 /* Select/Add Course */,
+				30FBEAAE1AAB62990028DB24 /* Select Players */,
 			);
 			name = CreateGame;
 			sourceTree = "<group>";
@@ -294,6 +298,36 @@
 			);
 			name = FacebookSDK;
 			path = ../../FacebookSDK;
+			sourceTree = "<group>";
+		};
+		30FBEAAD1AAB62610028DB24 /* Select/Add Course */ = {
+			isa = PBXGroup;
+			children = (
+				306564EA1A99171E003DAA17 /* CreateGameViewController.h */,
+				306564EB1A99171E003DAA17 /* CreateGameViewController.m */,
+				300E21021A9EB0E20099616A /* CreateGameTableViewDataSource.h */,
+				300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */,
+				306564ED1A991742003DAA17 /* AddCourseViewController.h */,
+				306564EE1A991742003DAA17 /* AddCourseViewController.m */,
+				30F3058D1AAFD9AF0030F455 /* holesTableViewDataSource.h */,
+				30F3058E1AAFD9AF0030F455 /* holesTableViewDataSource.m */,
+				3040D9361AA24F3C0005964F /* CourseCustomTableViewCell.h */,
+				3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */,
+				30B198D21AA69D490092F3DF /* CourseController.h */,
+				30B198D31AA69D490092F3DF /* CourseController.m */,
+				30B198D51AA69F3F0092F3DF /* Course.h */,
+				30B198D61AA69F3F0092F3DF /* Course.m */,
+			);
+			name = "Select/Add Course";
+			sourceTree = "<group>";
+		};
+		30FBEAAE1AAB62990028DB24 /* Select Players */ = {
+			isa = PBXGroup;
+			children = (
+				30FBEAB21AAB661E0028DB24 /* ChoosePlayerViewController.h */,
+				30FBEAB31AAB661E0028DB24 /* ChoosePlayerViewController.m */,
+			);
+			name = "Select Players";
 			sourceTree = "<group>";
 		};
 		E7B8157C4A1AA3D0D655CD7E /* Pods */ = {
@@ -357,6 +391,7 @@
 				TargetAttributes = {
 					306564BD1A990EBD003DAA17 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = CDJ8USG7DJ;
 					};
 					306564D91A990EBD003DAA17 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -458,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FBEAB41AAB661E0028DB24 /* ChoosePlayerViewController.m in Sources */,
 				30B198D71AA69F3F0092F3DF /* Course.m in Sources */,
 				30B198DC1AA6A9B70092F3DF /* MiniGolf.xcdatamodeld in Sources */,
 				306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */,
@@ -471,6 +507,7 @@
 				306564EC1A99171E003DAA17 /* CreateGameViewController.m in Sources */,
 				3040D9331AA245EC0005964F /* Stack.m in Sources */,
 				306564C41A990EBD003DAA17 /* main.m in Sources */,
+				30F3058F1AAFD9AF0030F455 /* holesTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

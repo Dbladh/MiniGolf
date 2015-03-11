@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2CCC1D57BC87E8B30E7CB04F"
-               BuildableName = "libPods-MiniGolf-TRVSDictionaryWithCaseInsensitivity.a"
-               BlueprintName = "Pods-MiniGolf-TRVSDictionaryWithCaseInsensitivity"
+               BlueprintIdentifier = "47BF63836AC8F02888EA265E"
+               BuildableName = "libPods-MiniGolf-SAStepperControl.a"
+               BlueprintName = "Pods-MiniGolf-SAStepperControl"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

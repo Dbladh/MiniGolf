@@ -13,12 +13,14 @@
 
 
 
-@interface AddCourseViewController ()
+@interface AddCourseViewController () <UITableViewDelegate>
 
 @property (nonatomic, strong) UITextField * courseNameTextField;
 @property (nonatomic, strong) UITableView * holesNumberTableView;
 @property (nonatomic, strong) PKYStepper * holesNumberStepper;
 @property (nonatomic, strong) UIBarButtonItem * saveCourseButton;
+@property (nonatomic, strong) UIStepper * holesStepper;
+@property (nonatomic, strong) UILabel * holesNumber;
 
 
 
@@ -37,24 +39,37 @@
     self.courseNameTextField.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:self.courseNameTextField];
         
-    float width = 260.0f;
-    float x = ([UIScreen mainScreen].bounds.size.width - width) / 2.0;
-        
-    self.holesNumberStepper = [[PKYStepper alloc] initWithFrame:CGRectMake(x, 220, width, 44)];
-    self.holesNumberStepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
-        stepper.countLabel.text = [NSString stringWithFormat:@"Holes: %@", @(count)];
-        };
+//    float width = 260.0f;
+//    float x = ([UIScreen mainScreen].bounds.size.width - width) / 2.0;
     
-    self.holesNumberStepper.value = 1;
-    self.holesNumberStepper.minimum = 1;
-    self.holesNumberStepper.maximum = 18;
+//    self.holesNumberStepper = [[PKYStepper alloc] initWithFrame:CGRectMake(x, 220, width, 44)];
+//    self.holesNumberStepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
+//        stepper.countLabel.text = [NSString stringWithFormat:@"Holes: %@", @(count)];
+//        };
+//    
+//    self.holesNumberStepper.value = 1;
+//    self.holesNumberStepper.minimum = 1;
+//    self.holesNumberStepper.maximum = 18;
+//    
+//    [self.holesNumberStepper setup];
+//    [self.view addSubview:self.holesNumberStepper];
     
-    [self.holesNumberStepper setup];
-    [self.view addSubview:self.holesNumberStepper];
-
+    self.holesStepper = [[UIStepper alloc] initWithFrame: CGRectMake(100, 250, 100, 100)];
+    
+    self.holesStepper.value = 1;
+    self.holesStepper.minimumValue = 1;
+    self.holesStepper.maximumValue = 18;
+    [self.holesStepper addTarget:self action:@selector(stepperChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    [self.view addSubview:self.holesStepper];
     
     self.holesNumberTableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 300, 350, 350)];
     [self.view addSubview:self.holesNumberTableView];
+    
+    self.holesNumber = [[UILabel alloc] initWithFrame:CGRectMake(215, 190, 150, 150)];
+    self.holesNumber.textColor = [UIColor blackColor];
+    self.holesNumber.text = [NSString stringWithFormat:@"Holes: %.f", self.holesStepper.value];
+    [self.view addSubview: self.holesNumber];
     
     self.saveCourseButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(save:)];
     self.saveCourseButton.title = @"Save";
@@ -62,14 +77,18 @@
     self.navigationItem.rightBarButtonItem = self.saveCourseButton;
 }
 
+-(void)stepperChanged:(id)sender{
+    self.holesNumber.text = [NSString stringWithFormat:@"Holes: %.f", self.holesStepper.value];
+}
+
 -(void)save:(id)sender{
     
     if (!self.thisCourse){
         
-        [[CourseController sharedInstance] addCourseWithTitle:self.courseNameTextField.text andText:self.holesNumberStepper.countLabel.text];
+        [[CourseController sharedInstance] addCourseWithTitle:self.courseNameTextField.text andText:self.holesNumber.text];
     }else{
         self.thisCourse.course = self.courseNameTextField.text;
-        self.thisCourse.hole = self.holesNumberStepper.countLabel.text;
+        self.thisCourse.hole = self.holesNumber.text;
     
     }
 
@@ -82,9 +101,12 @@
     //CreateGameViewController * createGameViewController = [CreateGameViewController new];
     [self.navigationController popToViewController: [self.navigationController.viewControllers objectAtIndex:0] animated:YES];
 
-    
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+        return self.holesStepper.value;
+
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

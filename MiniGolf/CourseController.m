@@ -42,7 +42,8 @@
     PFObject *course = [PFObject objectWithClassName:@"Course"];
     course[@"name"] = courseName;
     course[@"hole"] = hole;
-    [course saveInBackground];
+    [course saveEventually];
+    
 }
 
 -(void)removeEntry:(Course *)course{
