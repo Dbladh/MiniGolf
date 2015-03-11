@@ -10,8 +10,6 @@
 #import "Stack.h"
 #import <Parse/Parse.h>
 
-
-
 @interface CreateGameTableViewDataSource : NSObject <UITableViewDataSource>
 
 @property (nonatomic, strong)NSFetchedResultsController *fetchedResultsController;

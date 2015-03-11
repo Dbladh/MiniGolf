@@ -46,7 +46,6 @@
 		30EFE6A31AA7FCA6007358B0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30EFE6A21AA7FCA6007358B0 /* Social.framework */; };
 		30F3058A1AAB96880030F455 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F305891AAB96880030F455 /* AddressBook.framework */; };
 		30F3058C1AAB968E0030F455 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F3058B1AAB968E0030F455 /* AddressBookUI.framework */; };
-		30F3058F1AAFD9AF0030F455 /* holesTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F3058E1AAFD9AF0030F455 /* holesTableViewDataSource.m */; };
 		30FBEAAC1AA8046F0028DB24 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FBEAAA1AA8046F0028DB24 /* Parse.framework */; };
 		30FBEAB41AAB661E0028DB24 /* ChoosePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FBEAB31AAB661E0028DB24 /* ChoosePlayerViewController.m */; };
 		9D016E8F916F53882930B580 /* libPods-MiniGolf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4E7C1947C525E2CDE2B815 /* libPods-MiniGolf.a */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -117,8 +116,6 @@
 		30EFE6A21AA7FCA6007358B0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		30F305891AAB96880030F455 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		30F3058B1AAB968E0030F455 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		30F3058D1AAFD9AF0030F455 /* holesTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = holesTableViewDataSource.h; sourceTree = "<group>"; };
-		30F3058E1AAFD9AF0030F455 /* holesTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = holesTableViewDataSource.m; sourceTree = "<group>"; };
 		30FBEAAA1AA8046F0028DB24 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
 		30FBEAB21AAB661E0028DB24 /* ChoosePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePlayerViewController.h; sourceTree = "<group>"; };
 		30FBEAB31AAB661E0028DB24 /* ChoosePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePlayerViewController.m; sourceTree = "<group>"; };
@@ -309,8 +306,6 @@
 				300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */,
 				306564ED1A991742003DAA17 /* AddCourseViewController.h */,
 				306564EE1A991742003DAA17 /* AddCourseViewController.m */,
-				30F3058D1AAFD9AF0030F455 /* holesTableViewDataSource.h */,
-				30F3058E1AAFD9AF0030F455 /* holesTableViewDataSource.m */,
 				3040D9361AA24F3C0005964F /* CourseCustomTableViewCell.h */,
 				3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */,
 				30B198D21AA69D490092F3DF /* CourseController.h */,
@@ -507,7 +502,6 @@
 				306564EC1A99171E003DAA17 /* CreateGameViewController.m in Sources */,
 				3040D9331AA245EC0005964F /* Stack.m in Sources */,
 				306564C41A990EBD003DAA17 /* main.m in Sources */,
-				30F3058F1AAFD9AF0030F455 /* holesTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,20 +10,18 @@
 #import "PKYStepper.h"
 #import "CreateGameViewController.h"
 #import "CreateGameTableViewDataSource.h"
+#import "CourseCustomTableViewCell.h"
 
 
 
-@interface AddCourseViewController () <UITableViewDelegate>
+@interface AddCourseViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITextField * courseNameTextField;
 @property (nonatomic, strong) UITableView * holesNumberTableView;
 @property (nonatomic, strong) PKYStepper * holesNumberStepper;
 @property (nonatomic, strong) UIBarButtonItem * saveCourseButton;
-@property (nonatomic, strong) UIStepper * holesStepper;
 @property (nonatomic, strong) UILabel * holesNumber;
-
-
-
+@property (nonatomic, strong) UIStepper * holesStepper;
 
 @end
 
@@ -38,33 +36,18 @@
     self.courseNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(100, 130, 200, 30)];
     self.courseNameTextField.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:self.courseNameTextField];
-        
-//    float width = 260.0f;
-//    float x = ([UIScreen mainScreen].bounds.size.width - width) / 2.0;
-    
-//    self.holesNumberStepper = [[PKYStepper alloc] initWithFrame:CGRectMake(x, 220, width, 44)];
-//    self.holesNumberStepper.valueChangedCallback = ^(PKYStepper *stepper, float count) {
-//        stepper.countLabel.text = [NSString stringWithFormat:@"Holes: %@", @(count)];
-//        };
-//    
-//    self.holesNumberStepper.value = 1;
-//    self.holesNumberStepper.minimum = 1;
-//    self.holesNumberStepper.maximum = 18;
-//    
-//    [self.holesNumberStepper setup];
-//    [self.view addSubview:self.holesNumberStepper];
     
     self.holesStepper = [[UIStepper alloc] initWithFrame: CGRectMake(100, 250, 100, 100)];
-    
     self.holesStepper.value = 1;
     self.holesStepper.minimumValue = 1;
     self.holesStepper.maximumValue = 18;
     [self.holesStepper addTarget:self action:@selector(stepperChanged:) forControlEvents:UIControlEventValueChanged];
-    
     [self.view addSubview:self.holesStepper];
     
     self.holesNumberTableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 300, 350, 350)];
     [self.view addSubview:self.holesNumberTableView];
+    self.holesNumberTableView.dataSource = self;
+    self.holesNumberTableView.delegate = self;
     
     self.holesNumber = [[UILabel alloc] initWithFrame:CGRectMake(215, 190, 150, 150)];
     self.holesNumber.textColor = [UIColor blackColor];
@@ -79,6 +62,7 @@
 
 -(void)stepperChanged:(id)sender{
     self.holesNumber.text = [NSString stringWithFormat:@"Holes: %.f", self.holesStepper.value];
+    [self.holesNumberTableView reloadData];
 }
 
 -(void)save:(id)sender{
@@ -103,8 +87,22 @@
 
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CourseCustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell One"];
+    if (!cell){
+        cell = [CourseCustomTableViewCell new];
+    }
+    
+    cell.textLabel.text =[NSString stringWithFormat: @"Hole %ld", (long)indexPath.row +1];
+    
+    return cell;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
         return self.holesStepper.value;
+    
+    
 
 }
 
