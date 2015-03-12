@@ -38,7 +38,7 @@
     [self.view addSubview:self.courseNameTextField];
     
     self.holesStepper = [[UIStepper alloc] initWithFrame: CGRectMake(100, 250, 100, 100)];
-    self.holesStepper.value = 1;
+    self.holesStepper.value = 18;
     self.holesStepper.minimumValue = 1;
     self.holesStepper.maximumValue = 18;
     [self.holesStepper addTarget:self action:@selector(stepperChanged:) forControlEvents:UIControlEventValueChanged];
@@ -64,26 +64,38 @@
     self.holesNumber.text = [NSString stringWithFormat:@"Holes: %.f", self.holesStepper.value];
     [self.holesNumberTableView reloadData];
 }
+    
+-(void)parStepperChanged:(id)sender{
+    [self.holesNumberTableView reloadData];
+}
 
 -(void)save:(id)sender{
-    
-    if (!self.thisCourse){
-        
-        [[CourseController sharedInstance] addCourseWithTitle:self.courseNameTextField.text andText:self.holesNumber.text];
+    if ([self.courseNameTextField.text isEqualToString:@""])  {
+        UIAlertController * noCourseNameAlert = [UIAlertController alertControllerWithTitle:@"Course has no name" message:@"You must give the course a name before you can save" preferredStyle:UIAlertControllerStyleAlert];
+        [noCourseNameAlert addAction:[UIAlertAction actionWithTitle:@"Okay" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+            return;
+        }]];
+        [self presentViewController:noCourseNameAlert animated:YES completion:nil];
     }else{
-        self.thisCourse.course = self.courseNameTextField.text;
-        self.thisCourse.hole = self.holesNumber.text;
-    
+        if (!self.thisCourse){
+            
+            [[CourseController sharedInstance] addCourseWithTitle:self.courseNameTextField.text andText:self.holesNumber.text];
+        }else{
+            self.thisCourse.course = self.courseNameTextField.text;
+            self.thisCourse.hole = self.holesNumber.text;
+            
+        }
+        
+        [[CourseController sharedInstance] synchronize];
+        
+        CreateGameViewController * createGameViewController = [CreateGameViewController new];
+        [createGameViewController.chooseCourseTableView reloadData];
+        
+        
+        //CreateGameViewController * createGameViewController = [CreateGameViewController new];
+        [self.navigationController popToViewController: [self.navigationController.viewControllers objectAtIndex:0] animated:YES];
     }
-
-    [[CourseController sharedInstance] synchronize];
     
-    CreateGameViewController * createGameViewController = [CreateGameViewController new];
-    [createGameViewController.chooseCourseTableView reloadData];
-    
-
-    //CreateGameViewController * createGameViewController = [CreateGameViewController new];
-    [self.navigationController popToViewController: [self.navigationController.viewControllers objectAtIndex:0] animated:YES];
 
 }
 
@@ -93,6 +105,10 @@
     if (!cell){
         cell = [CourseCustomTableViewCell new];
     }
+
+    [cell.parStepper addTarget:self action:@selector(parStepperChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    cell.parNumber.text = [NSString stringWithFormat:@"Par: %.f", cell.parStepper.value];
     
     cell.textLabel.text =[NSString stringWithFormat: @"Hole %ld", (long)indexPath.row +1];
     
@@ -101,9 +117,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
         return self.holesStepper.value;
-    
-    
-
 }
 
 - (void)didReceiveMemoryWarning {

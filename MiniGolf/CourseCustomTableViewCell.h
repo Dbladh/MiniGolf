@@ -10,4 +10,7 @@
 
 @interface CourseCustomTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UIStepper *parStepper;
+@property (nonatomic, strong) UILabel *parNumber;
+
 @end
