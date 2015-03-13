@@ -37,6 +37,8 @@
 		30B198F41AA7F9050092F3DF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B198F31AA7F9050092F3DF /* SystemConfiguration.framework */; };
 		30B198F61AA7F91B0092F3DF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B198F51AA7F91B0092F3DF /* libz.dylib */; };
 		30B198F81AA7F9300092F3DF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B198F71AA7F9300092F3DF /* libsqlite3.dylib */; };
+		30D460331AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D460321AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.m */; };
+		30D460361AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D460351AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.m */; };
 		30DCE2D21A9D61C7003C97D5 /* FacebookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DCE2D11A9D61C7003C97D5 /* FacebookController.m */; };
 		30DCE3F01A9D61F2003C97D5 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DCE2D51A9D61F1003C97D5 /* FacebookSDK.framework */; };
 		30DCE3F11A9D61F2003C97D5 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DCE2D61A9D61F1003C97D5 /* FBAudienceNetwork.framework */; };
@@ -106,6 +108,10 @@
 		30B198F31AA7F9050092F3DF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		30B198F51AA7F91B0092F3DF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		30B198F71AA7F9300092F3DF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		30D460311AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ABPeoplePickerNavigationController+Utilities.h"; path = "../ABPeoplePickerNavigationController+Utilities.h"; sourceTree = "<group>"; };
+		30D460321AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ABPeoplePickerNavigationController+Utilities.m"; path = "../ABPeoplePickerNavigationController+Utilities.m"; sourceTree = "<group>"; };
+		30D460341AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPlayersTableViewDataSource.h; sourceTree = "<group>"; };
+		30D460351AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPlayersTableViewDataSource.m; sourceTree = "<group>"; };
 		30DCE2D01A9D61C7003C97D5 /* FacebookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookController.h; sourceTree = "<group>"; };
 		30DCE2D11A9D61C7003C97D5 /* FacebookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookController.m; sourceTree = "<group>"; };
 		30DCE2D51A9D61F1003C97D5 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -228,6 +234,8 @@
 				306564C61A990EBD003DAA17 /* AppDelegate.m */,
 				306564CB1A990EBD003DAA17 /* MainViewController.h */,
 				306564CC1A990EBD003DAA17 /* MainViewController.m */,
+				30D460311AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.h */,
+				30D460321AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.m */,
 				307CB90B1A9D76BB001B8CD3 /* CreateGame */,
 				307CB90C1A9D76CF001B8CD3 /* HistoryStats */,
 				3040D92A1AA2260F0005964F /* Facebook */,
@@ -321,6 +329,8 @@
 			children = (
 				30FBEAB21AAB661E0028DB24 /* ChoosePlayerViewController.h */,
 				30FBEAB31AAB661E0028DB24 /* ChoosePlayerViewController.m */,
+				30D460341AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.h */,
+				30D460351AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.m */,
 			);
 			name = "Select Players";
 			sourceTree = "<group>";
@@ -494,6 +504,8 @@
 				306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */,
 				30B198D41AA69D490092F3DF /* CourseController.m in Sources */,
 				306564F21A991755003DAA17 /* StatsViewController.m in Sources */,
+				30D460361AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.m in Sources */,
+				30D460331AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.m in Sources */,
 				306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */,
 				306564EF1A991742003DAA17 /* AddCourseViewController.m in Sources */,
 				30DCE2D21A9D61C7003C97D5 /* FacebookController.m in Sources */,

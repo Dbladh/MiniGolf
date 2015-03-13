@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface ChoosePlayerViewController : UIViewController <FBFriendPickerDelegate>
+@interface ChoosePlayerViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate>
 
-- (void)pickFriendsButtonClick:(id)sender;
+//- (void)pickFriendsButtonClick:(id)sender;
 
 @end

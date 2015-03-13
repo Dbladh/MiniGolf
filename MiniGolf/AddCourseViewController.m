@@ -35,6 +35,7 @@
     
     self.courseNameTextField = [[UITextField alloc] initWithFrame:CGRectMake(100, 130, 200, 30)];
     self.courseNameTextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.courseNameTextField.placeholder = @"Course Name...";
     [self.view addSubview:self.courseNameTextField];
     
     self.holesStepper = [[UIStepper alloc] initWithFrame: CGRectMake(100, 250, 100, 100)];
