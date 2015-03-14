@@ -7,6 +7,7 @@
 //
 
 #import "ChoosePlayerViewController.h"
+#import "GameViewController.h"
 
 
 @interface ChoosePlayerViewController () <UITableViewDelegate>
@@ -15,6 +16,8 @@
 @property (nonatomic, strong) UIBarButtonItem * addPlayersButton;
 @property (nonatomic, strong) NSMutableArray * players;
 @property (nonatomic, strong) UITableView * selectedPlayersTableView;
+@property (nonatomic, strong) UIButton * startGameButton;
+
 
 @end
 
@@ -24,31 +27,47 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.peoplePickerNavController = [ABPeoplePickerNavigationController new];
-    self.peoplePickerNavController.peoplePickerDelegate = self;
-
     self.addPlayersButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPlayersButtonPressed:)];
     self.navigationItem.rightBarButtonItem = self.addPlayersButton;
     
     self.selectedPlayersTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,200,self.view.frame.size.width, 300)];
     [self.view addSubview:self.selectedPlayersTableView];
+    
+    self.startGameButton = [[UIButton alloc] initWithFrame:CGRectMake(110, 550, 150, 50)];
+    [self.startGameButton setTitle:@"StartGame" forState:UIControlStateNormal];
+    [self.startGameButton setTitleColor:[UIColor cyanColor] forState:UIControlStateNormal];
+    [self.startGameButton addTarget:self action:@selector(startGameButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.startGameButton];
+    
         
 }
 
 - (void)addPlayersButtonPressed:(id)sender{
-    self.peoplePickerNavController = [ABPeoplePickerNavigationController new];
-    [self presentViewController:self.peoplePickerNavController animated:YES completion:nil];
+    ABPeoplePickerNavigationController* peoplePickerNavController = [ABPeoplePickerNavigationController new];
+    peoplePickerNavController.peoplePickerDelegate = self;
+    [self.navigationController presentViewController:peoplePickerNavController animated:YES completion:nil];
     
-    
+}
+
+- (void)startGameButtonPressed:(id)sender{
+    GameViewController * gameViewController = [GameViewController new];
+    gameViewController.courseIndex = self.courseIndex;
+    [self.navigationController pushViewController:gameViewController animated:YES];
 }
 
 - (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController*)peoplePicker didSelectPerson:(ABRecordRef)person{
    
+    NSString* firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
+    [self.players addObject:firstName];
+    
     [self dismissViewControllerAnimated:YES completion:^{
-        NSString* firstName = (__bridge_transfer NSString*)ABRecordCopyValue(person, kABPersonFirstNameProperty);
-        [self.players addObject:firstName];
+        // nothing yet
     }];
 }
+
+//- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker {
+//    [peoplePicker dismissViewControllerAnimated:YES completion:nil];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

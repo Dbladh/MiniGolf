@@ -12,16 +12,12 @@
 #import "CreateGameTableViewDataSource.h"
 #import "CourseCustomTableViewCell.h"
 
-
-
 @interface AddCourseViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITextField * courseNameTextField;
 @property (nonatomic, strong) UITableView * holesNumberTableView;
-@property (nonatomic, strong) PKYStepper * holesNumberStepper;
 @property (nonatomic, strong) UIBarButtonItem * saveCourseButton;
 @property (nonatomic, strong) UILabel * holesNumber;
-@property (nonatomic, strong) UIStepper * holesStepper;
 
 @end
 

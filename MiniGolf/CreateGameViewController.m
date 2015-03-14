@@ -86,7 +86,9 @@
     NSLog(@"%ld", (long)indexPath.row);
     
     ChoosePlayerViewController * choosePlayerViewController = [ChoosePlayerViewController new];
+    choosePlayerViewController.courseIndex = indexPath.row;
     [self.navigationController pushViewController:choosePlayerViewController animated:YES];
+
     
 }
 

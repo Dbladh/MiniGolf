@@ -13,6 +13,7 @@
 @interface AddCourseViewController : UIViewController
 
 @property (nonatomic, strong) Course *thisCourse;
+@property (nonatomic, strong) UIStepper * holesStepper;
 
 
 

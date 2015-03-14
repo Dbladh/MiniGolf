@@ -10,6 +10,7 @@
 		300E21041A9EB0E20099616A /* CreateGameTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */; };
 		300E21081AA0066C0099616A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300E21061AA0066C0099616A /* Crashlytics.framework */; };
 		300E21091AA0066C0099616A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300E21071AA0066C0099616A /* Fabric.framework */; };
+		3021748B1AB490F000E2F0B8 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3021748A1AB490F000E2F0B8 /* GameViewController.m */; };
 		3040D9331AA245EC0005964F /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040D9321AA245EC0005964F /* Stack.m */; };
 		3040D9351AA246990005964F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040D9341AA246990005964F /* CoreData.framework */; };
 		3040D9381AA24F3C0005964F /* CourseCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */; };
@@ -68,6 +69,8 @@
 		300E21031A9EB0E20099616A /* CreateGameTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateGameTableViewDataSource.m; sourceTree = "<group>"; };
 		300E21061AA0066C0099616A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		300E21071AA0066C0099616A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		302174891AB490F000E2F0B8 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		3021748A1AB490F000E2F0B8 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		3040D9311AA245EC0005964F /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		3040D9321AA245EC0005964F /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		3040D9341AA246990005964F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -197,6 +200,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		302174881AB4909A00E2F0B8 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				302174891AB490F000E2F0B8 /* GameViewController.h */,
+				3021748A1AB490F000E2F0B8 /* GameViewController.m */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
 		3040D92A1AA2260F0005964F /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +293,7 @@
 			children = (
 				30FBEAAD1AAB62610028DB24 /* Select/Add Course */,
 				30FBEAAE1AAB62990028DB24 /* Select Players */,
+				302174881AB4909A00E2F0B8 /* Game */,
 			);
 			name = CreateGame;
 			sourceTree = "<group>";
@@ -506,6 +519,7 @@
 				306564F21A991755003DAA17 /* StatsViewController.m in Sources */,
 				30D460361AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.m in Sources */,
 				30D460331AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.m in Sources */,
+				3021748B1AB490F000E2F0B8 /* GameViewController.m in Sources */,
 				306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */,
 				306564EF1A991742003DAA17 /* AddCourseViewController.m in Sources */,
 				30DCE2D21A9D61C7003C97D5 /* FacebookController.m in Sources */,

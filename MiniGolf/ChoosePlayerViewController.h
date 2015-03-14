@@ -13,6 +13,8 @@
 
 @interface ChoosePlayerViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate>
 
+@property (nonatomic, assign) NSInteger courseIndex;
+
 //- (void)pickFriendsButtonClick:(id)sender;
 
 @end
