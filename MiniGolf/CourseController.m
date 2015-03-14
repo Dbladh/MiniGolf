@@ -30,7 +30,7 @@
     return sharedInstance;
 }
 
--(void)addCourseWithTitle:(NSString *)courseName andText:(NSString *)hole{
+-(void)addCourseWithTitle:(NSString *)courseName andText:(NSNumber*)hole{
     
     Course *addCourse =  [NSEntityDescription insertNewObjectForEntityForName:@"Course"
                                                      inManagedObjectContext:[Stack sharedInstance].managedObjectContext];

@@ -76,10 +76,10 @@
     }else{
         if (!self.thisCourse){
             
-            [[CourseController sharedInstance] addCourseWithTitle:self.courseNameTextField.text andText:self.holesNumber.text];
+            [[CourseController sharedInstance] addCourseWithTitle:self.courseNameTextField.text andText:[NSNumber numberWithDouble:self.holesStepper.value]];
         }else{
             self.thisCourse.course = self.courseNameTextField.text;
-            self.thisCourse.hole = self.holesNumber.text;
+            self.thisCourse.hole = [NSNumber numberWithDouble:self.holesStepper.value];
             
         }
         

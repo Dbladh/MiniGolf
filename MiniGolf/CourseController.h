@@ -14,7 +14,7 @@
 + (CourseController *)sharedInstance;
 -(void)removeEntry:(Course *)course;
 -(void)synchronize;
--(void)addCourseWithTitle:(NSString *)courseName andText:(NSString *)hole;
+-(void)addCourseWithTitle:(NSString *)courseName andText:(NSNumber *)hole;
 -(NSArray *)courses;
 
 @end

@@ -26,7 +26,7 @@
     UIPageControl * pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     pageControl.backgroundColor = [UIColor redColor];
     Course *course = [[CourseController sharedInstance].courses objectAtIndex:self.courseIndex];
-    pageControl.numberOfPages = course.hole;
+    pageControl.numberOfPages = course.hole.doubleValue;
 
     [self.view addSubview:pageControl];
     
