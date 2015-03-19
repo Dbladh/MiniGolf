@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MiniGolf-KVNMaskedPageControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MiniGolf-PKYStepper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2CCC1D57BC87E8B30E7CB04F</key>
+		<key>1A1EF197A5A60CCC2FED59E6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>47BF63836AC8F02888EA265E</key>
+		<key>33C1FB589F36612700896B04</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>55CFA215A86290760B31B042</key>
+		<key>4AF61F4700AFE27D27CDBC80</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6AB867715B5DA3F13E47DD44</key>
+		<key>9DBEB99C83068083C38387AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AF531209A5410E655E79E111</key>
+		<key>ADD6E90ED45CE724269B3ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BAA8A6CD08FEDA4BEE094B75</key>
+		<key>E3E8FE7D52313AF757818216</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB43C18D01E253D7CB317F67</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -52,12 +52,12 @@
     
 }
 
--(NSArray *)courses{
+- (void)configureFetchedResultsController {
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Course"];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"course" ascending:YES]];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc]initWithFetchRequest:fetchRequest managedObjectContext:[Stack sharedInstance].managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     
-    NSArray *allCourses = [[Stack sharedInstance].managedObjectContext executeFetchRequest:fetchRequest error:NULL];
-    
-    return allCourses;
+    [self.fetchedResultsController performFetch:nil];
 }
 
 -(void)synchronize{

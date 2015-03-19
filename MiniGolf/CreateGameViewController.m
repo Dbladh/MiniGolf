@@ -42,20 +42,10 @@
     
     [self.view addSubview: self.chooseCourseTableView];
     [self.createGameDataSource registerTableView:self.chooseCourseTableView];
-    [self configureFetchedResultsController];
+    [[CourseController sharedInstance] configureFetchedResultsController];
+    self.createGameDataSource.fetchedResultsController = [CourseController sharedInstance].fetchedResultsController;
     
-    self.createGameDataSource.fetchedResultsController = self.fetchedResultsController;
-    
-}
-
--(void)configureFetchedResultsController{
-    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Course"];
-    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"course" ascending:YES]];
-    self.fetchedResultsController = [[NSFetchedResultsController alloc]initWithFetchRequest:fetchRequest managedObjectContext:[Stack sharedInstance].managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    
-    
-    self.fetchedResultsController.delegate = self;
-    [self.fetchedResultsController performFetch:nil];
+    [CourseController sharedInstance].fetchedResultsController.delegate = self;
     
 }
 
@@ -95,7 +85,7 @@
 
 
 
-#pragma mark - Delete Cell From TableView
+#pragma mark - Fetched Results Controller Delegate
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
     

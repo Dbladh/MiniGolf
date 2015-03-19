@@ -10,18 +10,21 @@ PODS:
   - FlurrySDK (4.4.0):
     - FlurrySDK/FlurrySDK (= 4.4.0)
   - FlurrySDK/FlurrySDK (4.4.0)
+  - KVNMaskedPageControl (0.1.0)
   - PKYStepper (0.0.1)
   - SAStepperControl (0.1.3)
   - TRVSDictionaryWithCaseInsensitivity (0.0.2)
 
 DEPENDENCIES:
   - Analytics/Flurry
+  - KVNMaskedPageControl
   - PKYStepper
   - SAStepperControl
 
 SPEC CHECKSUMS:
   Analytics: 57af1211d00ab8f6ccd655d2efa71c855a834011
   FlurrySDK: abaedafc350afa41b004236b67ae14f7d3748b68
+  KVNMaskedPageControl: fc248b94ddb39c1698297b8d1406784422af3e3e
   PKYStepper: 551554f434444e332fbf184cbbc243a747546592
   SAStepperControl: e3556ca88cffb23c73767a4b71e0f8af92679584
   TRVSDictionaryWithCaseInsensitivity: a61daa8469fa079e05b694f6aad5441785c837d1

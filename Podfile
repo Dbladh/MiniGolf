@@ -6,6 +6,7 @@ target 'MiniGolf' do
 pod 'PKYStepper'
 pod 'SAStepperControl'
 pod 'Analytics/Flurry'
+pod 'KVNMaskedPageControl'
 
 end
 

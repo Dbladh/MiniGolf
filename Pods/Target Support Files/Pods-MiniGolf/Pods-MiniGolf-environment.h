@@ -36,6 +36,12 @@
 #define COCOAPODS_VERSION_MINOR_FlurrySDK_FlurrySDK 4
 #define COCOAPODS_VERSION_PATCH_FlurrySDK_FlurrySDK 0
 
+// KVNMaskedPageControl
+#define COCOAPODS_POD_AVAILABLE_KVNMaskedPageControl
+#define COCOAPODS_VERSION_MAJOR_KVNMaskedPageControl 0
+#define COCOAPODS_VERSION_MINOR_KVNMaskedPageControl 1
+#define COCOAPODS_VERSION_PATCH_KVNMaskedPageControl 0
+
 // PKYStepper
 #define COCOAPODS_POD_AVAILABLE_PKYStepper
 #define COCOAPODS_VERSION_MAJOR_PKYStepper 0

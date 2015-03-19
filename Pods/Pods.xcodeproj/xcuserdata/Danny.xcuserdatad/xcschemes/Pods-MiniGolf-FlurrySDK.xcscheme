@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6AB867715B5DA3F13E47DD44"
+               BlueprintIdentifier = "9DBEB99C83068083C38387AC"
                BuildableName = "libPods-MiniGolf-FlurrySDK.a"
                BlueprintName = "Pods-MiniGolf-FlurrySDK"
                ReferencedContainer = "container:Pods.xcodeproj">

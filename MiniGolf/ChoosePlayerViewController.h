@@ -10,10 +10,12 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
+#import "Stack.h"
 
 @interface ChoosePlayerViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate>
 
 @property (nonatomic, assign) NSInteger courseIndex;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedPlayerResultsController;
 
 //- (void)pickFriendsButtonClick:(id)sender;
 

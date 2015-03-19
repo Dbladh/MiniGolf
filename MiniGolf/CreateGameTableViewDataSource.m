@@ -52,8 +52,7 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSArray* entryArray = [CourseController sharedInstance].courses;
-    Course * course = [entryArray objectAtIndex:indexPath.row];
+    Course * course = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [[CourseController sharedInstance]removeEntry:course];
     //[self.tableView reloadData];
     

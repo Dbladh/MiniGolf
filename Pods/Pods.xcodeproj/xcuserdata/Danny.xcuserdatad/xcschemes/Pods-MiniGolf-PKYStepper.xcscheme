@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "55CFA215A86290760B31B042"
+               BlueprintIdentifier = "4AF61F4700AFE27D27CDBC80"
                BuildableName = "libPods-MiniGolf-PKYStepper.a"
                BlueprintName = "Pods-MiniGolf-PKYStepper"
                ReferencedContainer = "container:Pods.xcodeproj">

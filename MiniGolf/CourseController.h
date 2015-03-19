@@ -15,6 +15,7 @@
 -(void)removeEntry:(Course *)course;
 -(void)synchronize;
 -(void)addCourseWithTitle:(NSString *)courseName andText:(NSNumber *)hole;
--(NSArray *)courses;
+-(void)configureFetchedResultsController;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 @end

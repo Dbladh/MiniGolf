@@ -8,15 +8,20 @@
 
 #import "ChoosePlayerViewController.h"
 #import "GameViewController.h"
+#import "SelectedPlayersTableViewDataSource.h"
+#import "SelectedPlayerTableViewCell.h"
 
 
-@interface ChoosePlayerViewController () <UITableViewDelegate>
+
+@interface ChoosePlayerViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) ABPeoplePickerNavigationController * peoplePickerNavController;
 @property (nonatomic, strong) UIBarButtonItem * addPlayersButton;
 @property (nonatomic, strong) NSMutableArray * players;
 @property (nonatomic, strong) UITableView * selectedPlayersTableView;
 @property (nonatomic, strong) UIButton * startGameButton;
+@property (nonatomic, assign) NSInteger playerRowCount;
+
 
 
 @end
@@ -25,12 +30,15 @@
 
 - (void)viewDidLoad {
     
+    self.players = [NSMutableArray new];
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.addPlayersButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addPlayersButtonPressed:)];
     self.navigationItem.rightBarButtonItem = self.addPlayersButton;
     
     self.selectedPlayersTableView = [[UITableView alloc] initWithFrame:CGRectMake(0,200,self.view.frame.size.width, 300)];
+    self.selectedPlayersTableView.dataSource = self;
     [self.view addSubview:self.selectedPlayersTableView];
     
     self.startGameButton = [[UIButton alloc] initWithFrame:CGRectMake(110, 550, 150, 50)];
@@ -60,14 +68,29 @@
     NSString* firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
     [self.players addObject:firstName];
     
+    [self.selectedPlayersTableView reloadData];
+    
     [self dismissViewControllerAnimated:YES completion:^{
         // nothing yet
     }];
 }
 
-//- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker {
-//    [peoplePicker dismissViewControllerAnimated:YES completion:nil];
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.players count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    SelectedPlayerTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell One"];
+    if (!cell){
+        cell = [SelectedPlayerTableViewCell new];
+    }
+    cell.textLabel.text = [self.players objectAtIndex:indexPath.row];
+    return cell;
+}
+
+- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker {
+    [peoplePicker dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
