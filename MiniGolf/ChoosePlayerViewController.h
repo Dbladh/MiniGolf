@@ -11,11 +11,13 @@
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import "Stack.h"
+#import "Player.h"
 
 @interface ChoosePlayerViewController : UIViewController <ABPeoplePickerNavigationControllerDelegate>
 
 @property (nonatomic, assign) NSInteger courseIndex;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedPlayerResultsController;
+@property (nonatomic, strong) NSMutableArray * players;
 
 //- (void)pickFriendsButtonClick:(id)sender;
 

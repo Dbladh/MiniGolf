@@ -11,5 +11,7 @@
 @interface GameViewController : UIViewController
 
 @property (nonatomic, assign) NSInteger courseIndex;
+@property (nonatomic, strong) UIScrollView * scrollView;
+@property (nonatomic, strong) UIPageControl * pageControl;
 
 @end

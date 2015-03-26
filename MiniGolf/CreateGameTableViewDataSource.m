@@ -54,7 +54,7 @@
     
     Course * course = [self.fetchedResultsController objectAtIndexPath:indexPath];
     [[CourseController sharedInstance]removeEntry:course];
-    //[self.tableView reloadData];
+    
     
 }
 

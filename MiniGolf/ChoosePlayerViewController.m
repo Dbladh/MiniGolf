@@ -10,17 +10,19 @@
 #import "GameViewController.h"
 #import "SelectedPlayersTableViewDataSource.h"
 #import "SelectedPlayerTableViewCell.h"
+#import "PlayerController.h"
+#import "NewPlayer.h"
 
 
 
-@interface ChoosePlayerViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ChoosePlayerViewController () <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) ABPeoplePickerNavigationController * peoplePickerNavController;
 @property (nonatomic, strong) UIBarButtonItem * addPlayersButton;
-@property (nonatomic, strong) NSMutableArray * players;
 @property (nonatomic, strong) UITableView * selectedPlayersTableView;
 @property (nonatomic, strong) UIButton * startGameButton;
 @property (nonatomic, assign) NSInteger playerRowCount;
+@property (nonatomic, strong) NSString * firstName;
 
 
 
@@ -47,6 +49,11 @@
     [self.startGameButton addTarget:self action:@selector(startGameButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.startGameButton];
     
+    [[PlayerController sharedInstance] configureFetchedResultsController];
+    
+    self.fetchedPlayerResultsController = [NSFetchedResultsController new];
+    self.fetchedPlayerResultsController.delegate = self;
+    
         
 }
 
@@ -60,13 +67,19 @@
 - (void)startGameButtonPressed:(id)sender{
     GameViewController * gameViewController = [GameViewController new];
     gameViewController.courseIndex = self.courseIndex;
+    
+    [[PlayerController sharedInstance] addPlayers:self.players];
+    
     [self.navigationController pushViewController:gameViewController animated:YES];
+    
 }
 
 - (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController*)peoplePicker didSelectPerson:(ABRecordRef)person{
    
-    NSString* firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
-    [self.players addObject:firstName];
+    self.firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
+    NewPlayer * player = [NewPlayer new];
+    player.name = self.firstName;
+    [self.players addObject: player];
     
     [self.selectedPlayersTableView reloadData];
     
@@ -84,7 +97,9 @@
     if (!cell){
         cell = [SelectedPlayerTableViewCell new];
     }
-    cell.textLabel.text = [self.players objectAtIndex:indexPath.row];
+    NewPlayer *player = [NewPlayer new];
+    player = [self.players objectAtIndex:indexPath.row];
+    cell.textLabel.text = player.name;
     return cell;
 }
 
@@ -92,9 +107,36 @@
     [peoplePicker dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self.players removeObjectAtIndex:indexPath.row];
+    [tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
+    
+    switch (type) {
+        case NSFetchedResultsChangeInsert:
+            [self.selectedPlayersTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            break;
+        case NSFetchedResultsChangeMove:
+            [self.selectedPlayersTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self.selectedPlayersTableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            break;
+        case NSFetchedResultsChangeDelete:
+            [self.selectedPlayersTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        case NSFetchedResultsChangeUpdate:
+            [self.selectedPlayersTableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            break;
+        default:
+            break;
+    }
 }
 
 /*

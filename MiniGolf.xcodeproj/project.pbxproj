@@ -14,9 +14,15 @@
 		3029910E1AB4C50F00975C9B /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029910D1AB4C50F00975C9B /* Course.m */; };
 		302991141ABA5F0000975C9B /* SelectedPlayerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 302991131ABA5F0000975C9B /* SelectedPlayerTableViewCell.m */; };
 		3029911A1ABA743600975C9B /* Course.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 302991181ABA743600975C9B /* Course.xcdatamodeld */; };
+		3029911D1ABD02A500975C9B /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029911C1ABD02A500975C9B /* Player.m */; };
+		302991201ABD03DD00975C9B /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3029911F1ABD03DD00975C9B /* PlayerController.m */; };
+		302991231ABD128B00975C9B /* NewPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 302991221ABD128B00975C9B /* NewPlayer.m */; };
+		302991261ABD155000975C9B /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 302991251ABD155000975C9B /* Game.m */; };
+		302991291ABD162400975C9B /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302991281ABD162400975C9B /* GameController.m */; };
 		3040D9331AA245EC0005964F /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040D9321AA245EC0005964F /* Stack.m */; };
 		3040D9351AA246990005964F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040D9341AA246990005964F /* CoreData.framework */; };
 		3040D9381AA24F3C0005964F /* CourseCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */; };
+		3061E7631ABD56A70015C982 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3061E7621ABD56A70015C982 /* GameView.m */; };
 		306564C41A990EBD003DAA17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C31A990EBD003DAA17 /* main.m */; };
 		306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564C61A990EBD003DAA17 /* AppDelegate.m */; };
 		306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 306564CC1A990EBD003DAA17 /* MainViewController.m */; };
@@ -77,11 +83,23 @@
 		302991121ABA5F0000975C9B /* SelectedPlayerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedPlayerTableViewCell.h; sourceTree = "<group>"; };
 		302991131ABA5F0000975C9B /* SelectedPlayerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedPlayerTableViewCell.m; sourceTree = "<group>"; };
 		302991191ABA743600975C9B /* Course.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Course.xcdatamodel; sourceTree = "<group>"; };
+		3029911B1ABD02A500975C9B /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		3029911C1ABD02A500975C9B /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		3029911E1ABD03DD00975C9B /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
+		3029911F1ABD03DD00975C9B /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
+		302991211ABD128B00975C9B /* NewPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPlayer.h; sourceTree = "<group>"; };
+		302991221ABD128B00975C9B /* NewPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPlayer.m; sourceTree = "<group>"; };
+		302991241ABD155000975C9B /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		302991251ABD155000975C9B /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		302991271ABD162400975C9B /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		302991281ABD162400975C9B /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		3040D9311AA245EC0005964F /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		3040D9321AA245EC0005964F /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
 		3040D9341AA246990005964F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3040D9361AA24F3C0005964F /* CourseCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCustomTableViewCell.h; sourceTree = "<group>"; };
 		3040D9371AA24F3C0005964F /* CourseCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCustomTableViewCell.m; sourceTree = "<group>"; };
+		3061E7611ABD56A70015C982 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		3061E7621ABD56A70015C982 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		306564BE1A990EBD003DAA17 /* MiniGolf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGolf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306564C21A990EBD003DAA17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306564C31A990EBD003DAA17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -208,6 +226,12 @@
 			children = (
 				302174891AB490F000E2F0B8 /* GameViewController.h */,
 				3021748A1AB490F000E2F0B8 /* GameViewController.m */,
+				302991271ABD162400975C9B /* GameController.h */,
+				302991281ABD162400975C9B /* GameController.m */,
+				3061E7611ABD56A70015C982 /* GameView.h */,
+				3061E7621ABD56A70015C982 /* GameView.m */,
+				302991241ABD155000975C9B /* Game.h */,
+				302991251ABD155000975C9B /* Game.m */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -345,6 +369,12 @@
 			children = (
 				30FBEAB21AAB661E0028DB24 /* ChoosePlayerViewController.h */,
 				30FBEAB31AAB661E0028DB24 /* ChoosePlayerViewController.m */,
+				3029911E1ABD03DD00975C9B /* PlayerController.h */,
+				3029911F1ABD03DD00975C9B /* PlayerController.m */,
+				3029911B1ABD02A500975C9B /* Player.h */,
+				3029911C1ABD02A500975C9B /* Player.m */,
+				302991211ABD128B00975C9B /* NewPlayer.h */,
+				302991221ABD128B00975C9B /* NewPlayer.m */,
 				302991121ABA5F0000975C9B /* SelectedPlayerTableViewCell.h */,
 				302991131ABA5F0000975C9B /* SelectedPlayerTableViewCell.m */,
 				30D460341AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.h */,
@@ -517,22 +547,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				30FBEAB41AAB661E0028DB24 /* ChoosePlayerViewController.m in Sources */,
+				302991261ABD155000975C9B /* Game.m in Sources */,
 				302991141ABA5F0000975C9B /* SelectedPlayerTableViewCell.m in Sources */,
 				306564C71A990EBD003DAA17 /* AppDelegate.m in Sources */,
 				30B198D41AA69D490092F3DF /* CourseController.m in Sources */,
 				3029911A1ABA743600975C9B /* Course.xcdatamodeld in Sources */,
 				306564F21A991755003DAA17 /* StatsViewController.m in Sources */,
 				30D460361AB2861600C31EB8 /* SelectedPlayersTableViewDataSource.m in Sources */,
+				302991231ABD128B00975C9B /* NewPlayer.m in Sources */,
 				30D460331AB2790200C31EB8 /* ABPeoplePickerNavigationController+Utilities.m in Sources */,
 				3021748B1AB490F000E2F0B8 /* GameViewController.m in Sources */,
+				3029911D1ABD02A500975C9B /* Player.m in Sources */,
 				306564CD1A990EBD003DAA17 /* MainViewController.m in Sources */,
 				306564EF1A991742003DAA17 /* AddCourseViewController.m in Sources */,
 				30DCE2D21A9D61C7003C97D5 /* FacebookController.m in Sources */,
 				3040D9381AA24F3C0005964F /* CourseCustomTableViewCell.m in Sources */,
 				3029910E1AB4C50F00975C9B /* Course.m in Sources */,
 				300E21041A9EB0E20099616A /* CreateGameTableViewDataSource.m in Sources */,
+				3061E7631ABD56A70015C982 /* GameView.m in Sources */,
 				306564EC1A99171E003DAA17 /* CreateGameViewController.m in Sources */,
 				3040D9331AA245EC0005964F /* Stack.m in Sources */,
+				302991291ABD162400975C9B /* GameController.m in Sources */,
+				302991201ABD03DD00975C9B /* PlayerController.m in Sources */,
 				306564C41A990EBD003DAA17 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

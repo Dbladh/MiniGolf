@@ -59,7 +59,7 @@
 
 - (NSURL*)modelURL
 {
-    return [[NSBundle mainBundle] URLForResource:@"MiniGolf" withExtension:@"momd"];
+    return [[NSBundle mainBundle] URLForResource:@"Course" withExtension:@"momd"];
 }
 
 - (NSManagedObjectModel*)managedObjectModel
