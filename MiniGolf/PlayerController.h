@@ -14,8 +14,9 @@
 + (PlayerController *)sharedInstance;
 -(void)removePlayer:(Player *)player;
 -(void)synchronize;
--(void)addPlayers:(NSArray *) players;
+-(void)addPlayerToCourse:(Course *)course withFirstName:(NSString *)firstName;
 -(void)configureFetchedResultsController;
+-(NSArray *)playersForCourse:(Course *)course;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 @end

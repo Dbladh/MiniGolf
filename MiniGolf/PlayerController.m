@@ -9,7 +9,6 @@
 #import "PlayerController.h"
 #import "Stack.h"
 #import <Parse/Parse.h>
-#import "NewPlayer.h"
 
 @interface PlayerController ()
 
@@ -28,24 +27,19 @@
     return sharedInstance;
 }
 
+- (void)addPlayerToCourse:(Course *)course withFirstName:(NSString *)firstName {
+    Player *player = [NSEntityDescription insertNewObjectForEntityForName:@"Player"
+                                           inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
+    player.course = course;
+    player.name = firstName;
+    [self synchronize];
+}
 
--(void)addPlayers:(NSArray *) players{
-    
-    for (NewPlayer __strong *player in players) {
-        player = [NSEntityDescription insertNewObjectForEntityForName:@"Player"
-                                               inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
-        [self synchronize];
-    }
-    
-    
-    
-    
-    
-//    PFObject *player = [PFObject objectWithClassName:@"Player"];
-//    player[@"name"] = player;
-//    player[@"score"] = playerScore;
-//    [player saveEventually];
-    
+- (NSArray *)playersForCourse:(Course *)course {
+    NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"Player"];
+    fetchRequest.predicate = [NSPredicate predicateWithFormat:@"course = %@", course];
+    fetchRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES]];
+    return [[Stack sharedInstance].managedObjectContext executeFetchRequest:fetchRequest error:nil];
 }
 
 - (void)configureFetchedResultsController {

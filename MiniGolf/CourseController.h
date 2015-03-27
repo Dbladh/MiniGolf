@@ -17,5 +17,6 @@
 -(void)addCourseWithTitle:(NSString *)courseName andText:(NSNumber *)hole;
 -(void)configureFetchedResultsController;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, strong) NSArray *courses;
 
 @end

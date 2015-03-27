@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
 @interface GameViewController : UIViewController
 
 @property (nonatomic, assign) NSInteger courseIndex;
+@property (nonatomic, assign) NSInteger playerIndex;
 @property (nonatomic, strong) UIScrollView * scrollView;
 @property (nonatomic, strong) UIPageControl * pageControl;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 @end

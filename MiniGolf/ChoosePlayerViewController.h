@@ -17,7 +17,6 @@
 
 @property (nonatomic, assign) NSInteger courseIndex;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedPlayerResultsController;
-@property (nonatomic, strong) NSMutableArray * players;
 
 //- (void)pickFriendsButtonClick:(id)sender;
 

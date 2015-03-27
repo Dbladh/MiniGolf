@@ -11,7 +11,7 @@
 #import "SelectedPlayersTableViewDataSource.h"
 #import "SelectedPlayerTableViewCell.h"
 #import "PlayerController.h"
-#import "NewPlayer.h"
+#import "CourseController.h"
 
 
 
@@ -22,8 +22,7 @@
 @property (nonatomic, strong) UITableView * selectedPlayersTableView;
 @property (nonatomic, strong) UIButton * startGameButton;
 @property (nonatomic, assign) NSInteger playerRowCount;
-@property (nonatomic, strong) NSString * firstName;
-
+@property (nonatomic, strong) Course *course;
 
 
 @end
@@ -32,7 +31,7 @@
 
 - (void)viewDidLoad {
     
-    self.players = [NSMutableArray new];
+    self.course = [CourseController sharedInstance].fetchedResultsController.fetchedObjects[self.courseIndex];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -68,18 +67,14 @@
     GameViewController * gameViewController = [GameViewController new];
     gameViewController.courseIndex = self.courseIndex;
     
-    [[PlayerController sharedInstance] addPlayers:self.players];
-    
     [self.navigationController pushViewController:gameViewController animated:YES];
     
 }
 
 - (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController*)peoplePicker didSelectPerson:(ABRecordRef)person{
    
-    self.firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
-    NewPlayer * player = [NewPlayer new];
-    player.name = self.firstName;
-    [self.players addObject: player];
+    NSString *firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
+    [[PlayerController sharedInstance] addPlayerToCourse:self.course withFirstName:firstName];
     
     [self.selectedPlayersTableView reloadData];
     
@@ -89,7 +84,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.players count];
+    return [[PlayerController sharedInstance] playersForCourse:self.course].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -97,8 +92,7 @@
     if (!cell){
         cell = [SelectedPlayerTableViewCell new];
     }
-    NewPlayer *player = [NewPlayer new];
-    player = [self.players objectAtIndex:indexPath.row];
+    Player *player = [[PlayerController sharedInstance] playersForCourse:self.course][indexPath.row];
     cell.textLabel.text = player.name;
     return cell;
 }
@@ -108,8 +102,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    [self.players removeObjectAtIndex:indexPath.row];
+    [[PlayerController sharedInstance] removePlayer:[[PlayerController sharedInstance] playersForCourse:self.course][indexPath.row]];
     [tableView reloadData];
 }
 

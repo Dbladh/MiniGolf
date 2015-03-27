@@ -24,7 +24,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[CourseController alloc] init];
-        
+        sharedInstance.courses = [NSArray array];
         
     });
     return sharedInstance;
@@ -36,6 +36,10 @@
                                                      inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
     addCourse.course = courseName;
     addCourse.hole = hole;
+    
+    NSMutableArray *mutableCourses = [NSMutableArray arrayWithArray:self.courses];
+    [mutableCourses addObject:addCourse];
+    self.courses = mutableCourses;
     
     [self synchronize];
     
